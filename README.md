@@ -10,23 +10,23 @@
 | **Langages** | ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![SQL](https://img.shields.io/badge/sql-4479A1?style=for-the-badge&logo=postgresql&logoColor=white) ![R](https://img.shields.io/badge/r-%23276DC3.svg?style=for-the-badge&logo=r&logoColor=white) |
 | **Data Science** | ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white) ![Scikit-Learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white) ![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white) |
 | **Visualisation** | ![Power Bi](https://img.shields.io/badge/power_bi-F2C811?style=for-the-badge&logo=microsoftpowerbi&logoColor=black) ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=Streamlit&logoColor=white) ![Plotly](https://img.shields.io/badge/Plotly-%233F4F75.svg?style=for-the-badge&logo=Plotly&logoColor=white) |
-| **Outils** | ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white) ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black) ![Google Cloud](https://img.shields.io/badge/GoogleCloud-%234285F4.svg?style=for-the-badge&logo=google-cloud&logoColor=white) |
+| **Outils** | ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white) ![Kaggle](https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=Kaggle&logoColor=white) ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black) ![Google Cloud](https://img.shields.io/badge/GoogleCloud-%234285F4.svg?style=for-the-badge&logo=google-cloud&logoColor=white) |
 
 ---
 
 ## 🔬 Projets Data Science Phares
 
-### 🛡️ [Détection de Fraude Bancaire](TON_LIEN_GITHUB_ICI)
+### 🛡️ [Détection de Fraude Bancaire](https://github.com/Dave-kossi/bank-transaction-fraud-detection)
 * **Problématique :** Identifier les transactions frauduleuses sur un dataset déséquilibré (50k entrées).
 * **Modèle :** LightGBM optimisé avec un **AUC de 0.804** et une précision de **99.7%**.
 * **Impact :** Réduction des faux positifs pour améliorer l'expérience client.
 
-### ⚙️ [Maintenance Prédictive Industrielle](TON_LIEN_GITHUB_ICI)
+### ⚙️ [Maintenance Prédictive Industrielle](https://github.com/Dave-kossi/Predictive-Maintenance-in-industry)
 * **Problématique :** Prédire la fin de vie utile (RUL) d'équipements industriels.
 * **Technique :** Analyse de survie avec le modèle de **Kaplan-Meier**.
 * **Outils :** Python, Lifelines, Streamlit.
 
-### 🏥 [Analyse des Coûts d'Assurance](TON_LIEN_GITHUB_ICI)
+### 🏥 [Analyse des Coûts médicaux](https://github.com/Dave-kossi/healthcare-cost-analysis)
 * **Problématique :** Prédire les frais médicaux annuels basés sur des variables démographiques.
 * **Insight :** Mise en évidence d'un surcoût de **x4.7** pour les profils fumeurs via Régression Linéaire.
 
@@ -46,7 +46,7 @@
 ---
 
 ## 📬 Me contacter
-[![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](TON_LIEN_LINKEDIN_ICI)
+[![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](www.linkedin.com/in/kossi-noumagno)
 [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:noumagnokossi0@gmail.com)
 
 ---
