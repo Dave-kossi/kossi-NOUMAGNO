@@ -33,8 +33,8 @@
 ---
 
 ##  Expériences & Leadership
-* **Technicien Informatique | Computer Forever (Togo) :
-* **  Réduction de **35% des plaintes** via une restructuration du SAV.
+* **Technicien Informatique**| Computer Forever (Togo) :
+* Réduction de **35% des plaintes** via une restructuration du SAV.
 * Augmentation de la clientèle de **15%** grâce à une stratégie de maintenance préventive.
 
 ---
