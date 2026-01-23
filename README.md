@@ -1,64 +1,53 @@
-
-### Data Analyst | Future Data Scientist | AI Enthusiast
-
-# Kossi NOUMAGNO 
-**Étudiant en Master 1 Ingénierie Mathématique & Data Science Data Analyst | Future Data Scientist | AI Enthusiast**  Basé à Brunstatt, France 
+###  Data Analyst | Future Data Scientist | AI Enthusiast
+Étudiant en **M1 Ingénierie Mathématique & Data Science** à l'Université de Haute-Alsace, je me passionne pour la transformation des données brutes en insights stratégiques.
 
 ---
 
-### 💡 À propos de moi
-[cite_start]Étudiant à l'Université de Haute-Alsace, je me spécialise en **analyse prédictive**, **modélisation du risque** et **machine learning**[cite: 6]. [cite_start]Ma double compétence en mathématiques appliquées et en déploiement d'IA me permet de transformer des données brutes en décisions stratégiques[cite: 7, 32].
+##  Stack Technique
 
-- [cite_start]🎓 **Formation :** M1 Ingénierie Mathématique & Data Science (UHA)[cite: 32].
-- [cite_start]🎯 **Objectif :** Contribuer à des projets à fort impact décisionnel en Finance, Assurance ou Industrie[cite: 7].
-- [cite_start]🛠️ **Soft Skills :** Résolution de problèmes complexes, autonomie et communication technique[cite: 25, 26].
-
----
-
-### 🛠️ Stack Technique
-- [cite_start]**Langages :** Python (Expert), SQL, R, Linux[cite: 20].
-- [cite_start]**Data & ML :** Scikit-learn, TensorFlow, LightGBM, Pandas, NumPy[cite: 11, 21].
-- [cite_start]**Visualisation/BI :** Streamlit, Power BI, Plotly, Matplotlib, Seaborn[cite: 14, 22].
-- [cite_start]**Outils & Cloud :** Git/GitHub, BigQuery, Hugging Face, Kaggle.
+| Domaine | Technologies |
+| :--- | :--- |
+| **Langages** | ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![SQL](https://img.shields.io/badge/sql-4479A1?style=for-the-badge&logo=postgresql&logoColor=white) ![R](https://img.shields.io/badge/r-%23276DC3.svg?style=for-the-badge&logo=r&logoColor=white) |
+| **Data Science** | ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white) ![Scikit-Learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white) ![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white) |
+| **Visualisation** | ![Power Bi](https://img.shields.io/badge/power_bi-F2C811?style=for-the-badge&logo=microsoftpowerbi&logoColor=black) ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=Streamlit&logoColor=white) ![Plotly](https://img.shields.io/badge/Plotly-%233F4F75.svg?style=for-the-badge&logo=Plotly&logoColor=white) |
+| **Outils** | ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white) ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black) ![Google Cloud](https://img.shields.io/badge/GoogleCloud-%234285F4.svg?style=for-the-badge&logo=google-cloud&logoColor=white) |
 
 ---
 
-### 🔬 Projets Data Science Phares
+## 🔬 Projets Data Science Phares
 
-#### 🛡️ [Détection de Fraude Bancaire](Lien_Vers_Repo)
-[cite_start]Analyse de 50 000 transactions sur données déséquilibrées[cite: 10].
-- [cite_start]**Modèle Optimal :** LightGBM avec une **Précision de 99.7%** et un AUC de 0.804[cite: 11].
-- [cite_start]**Impact :** Réduction des fausses alertes clients et amélioration de l'efficacité opérationnelle[cite: 12].
+### 🛡️ [Détection de Fraude Bancaire](TON_LIEN_GITHUB_ICI)
+* **Problématique :** Identifier les transactions frauduleuses sur un dataset déséquilibré (50k entrées).
+* **Modèle :** LightGBM optimisé avec un **AUC de 0.804** et une précision de **99.7%**.
+* **Impact :** Réduction des faux positifs pour améliorer l'expérience client.
 
+### ⚙️ [Maintenance Prédictive Industrielle](TON_LIEN_GITHUB_ICI)
+* **Problématique :** Prédire la fin de vie utile (RUL) d'équipements industriels.
+* **Technique :** Analyse de survie avec le modèle de **Kaplan-Meier**.
+* **Outils :** Python, Lifelines, Streamlit.
 
-#### ⚙️ [Maintenance Prédictive Industrielle](Lien_Vers_Repo)
-[cite_start]Estimation de la probabilité de panne via l'analyse de survie[cite: 13, 15].
-- [cite_start]**Technique :** Modèle **Kaplan-Meier** et estimation de la **RLU** (Remaining Useful Life)[cite: 13, 14].
-- [cite_start]**Stack :** Python, Lifelines, Streamlit[cite: 14].
-
-#### 🏥 [Prédiction des Coûts Médicaux (Assurance)](Lien_Vers_Repo)
-[cite_start]Modélisation des facteurs de surcoût pour l'ajustement tarifaire[cite: 16, 18].
-- [cite_start]**Insight Clé :** Identification d'un ratio de dépense **x4,7 chez les fumeurs**[cite: 18].
-- [cite_start]**Algorithme :** Régression Linéaire avec Scikit-learn[cite: 17].
+### 🏥 [Analyse des Coûts d'Assurance](TON_LIEN_GITHUB_ICI)
+* **Problématique :** Prédire les frais médicaux annuels basés sur des variables démographiques.
+* **Insight :** Mise en évidence d'un surcoût de **x4.7** pour les profils fumeurs via Régression Linéaire.
 
 ---
 
-### 💼 Expérience & Leadership
-- **Technicien Informatique (Computer Forever, Togo) | [cite_start]2022-2024**[cite: 28]:
-    - [cite_start]Mise en place d'une équipe d'intervention rapide (**-35% de plaintes clients**)[cite: 29].
-    - [cite_start]Élaboration d'un plan de maintenance et sensibilisation (**+15% de nouveaux clients**)[cite: 30].
+##  Expériences & Leadership
+* **Technicien Informatique | Computer Forever (Togo) :** * Réduction de **35% des plaintes** via une restructuration du SAV.
+    * Augmentation de la clientèle de **15%** grâce à une stratégie de maintenance préventive.
 
 ---
 
-### 🏆 Certifications
-- [cite_start]🎓 **Machine Learning Specialization** (Stanford & DeepLearning.AI)[cite: 36].
-- [cite_start]📊 **Google Data Analytics Professional Certificate**[cite: 37].
-- [cite_start]🕵️ **IA in Fraud Detection** (LinkedIn Learning)[cite: 38].
+## Certifications
+* **Machine Learning Specialization** (Stanford / DeepLearning.AI)
+*  **Google Data Analytics Professional Certificate**
+*  **AI in Fraud Detection** (LinkedIn Learning)
 
 ---
 
-### 📬 Me contacter
-- [cite_start]**Email :** [noumagnokossi0@gmail.com](mailto:noumagnokossi0@gmail.com) [cite: 4]
-- [cite_start]**LinkedIn :** [Kossi NOUMAGNO](Lien_Linkedin) [cite: 3]
-- [cite_start]**Mobile :** +33 7 45 97 43 82 [cite: 3]
-- [cite_start]**Langues :** Français (Natif), Anglais (B2)[cite: 39].râce à l'IA."*
+## 📬 Me contacter
+[![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](TON_LIEN_LINKEDIN_ICI)
+[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:noumagnokossi0@gmail.com)
+
+---
+*✨ "Transformer la complexité des données en clarté décisionnelle."*
