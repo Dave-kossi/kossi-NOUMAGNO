@@ -42,9 +42,7 @@
 - **Objectif :** Automatiser la collecte de données des stations de vélos en libre-service  
 - **Analyse :** Étude des taux d’occupation et création d’un historique exploitable  
 - **Finalité :** Préparation de données pour des modèles prédictifs de disponibilité  
-- 🌐 **Démo live :** https://biketrack-jq9uepdtfbywzdccc5tvim.streamlit.app/
-
-> Le service VéloCité à Mulhouse propose des vélos électriques en libre-service accessibles via application mobile et répartis sur plusieurs stations, permettant une collecte de données riche pour l’analyse des usages :contentReference[oaicite:0]{index=0}  
+- 🌐 [Démo live](https://biketrack-jq9uepdtfbywzdccc5tvim.streamlit.app/)
 
 ---
 
@@ -54,8 +52,7 @@
 - Analyses avancées : vitesse de transition, clustering et scoring multicritère  
 - Projections jusqu’en 2050 pour anticiper les scénarios énergétiques  
 - Approche data-driven pour la prise de décision en politiques énergétiques  
-- 🌐 **Démo live :** https://euenergyconsomption-dmjfgddsphmd4ydjqlscgk.streamlit.app/
-
+- 🌐 [Démo live](https://euenergyconsomption-dmjfgddsphmd4ydjqlscgk.streamlit.app/)
 ---
 
 ## 💼 Expériences & Leadership  
