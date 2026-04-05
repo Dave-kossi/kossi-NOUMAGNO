@@ -38,7 +38,7 @@
 ---
 
 ### 🚲 Collecte et analyse de données vélos (Vélostation Mulhouse)
-- **Technologies :** Python, API REST, Pandas, Data Engineering, Time Series  
+- **Technologies :** Python, Streamlit, Pandas, Data Engineering, Time Series  
 - **Objectif :** Automatiser la collecte de données des stations de vélos en libre-service  
 - **Analyse :** Étude des taux d’occupation et création d’un historique exploitable  
 - **Finalité :** Préparation de données pour des modèles prédictifs de disponibilité  
