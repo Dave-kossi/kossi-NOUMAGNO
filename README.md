@@ -55,6 +55,16 @@
 - 🌐 [Démo live](https://euenergyconsomption-dmjfgddsphmd4ydjqlscgk.streamlit.app/)
 ---
 
+### 🛒 Analyse Interactive des Ventes — Online Retail Dashboard
+- **Technologies :** Python, Pandas, Plotly, Streamlit, Data Cleaning, Feature Engineering  
+- **Objectif :** Transformer un dataset de plus de 500 000 transactions en outil de Business Intelligence interactif  
+- **Analyse :** KPIs financiers, segmentation client RFM et analyse Pareto (80/20)  
+- **Data Engineering :** Nettoyage avancé, gestion des anomalies et création de variables temporelles  
+- **Impact :** Aide à la prise de décision stratégique grâce à une visualisation interactive des performances commerciales  
+- 🌐 [Démo live](https://onlineretailproject-n4u86pch6tfkxqdhtaceco.streamlit.app/)
+
+---
+
 ## 💼 Expériences & Leadership  
 
 ### 💡 Optimisation et Administration Logistique (Bénévolat)  
