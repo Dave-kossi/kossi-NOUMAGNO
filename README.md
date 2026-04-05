@@ -1,9 +1,10 @@
-###  Data Analyst | Future Data Scientist | AI Enthusiast
+### Data Analyst | Future Data Scientist | AI Enthusiast  
+
 Étudiant en **M1 Ingénierie Mathématique & Data Science** à l'Université de Haute-Alsace, je me passionne pour la transformation des données brutes en insights stratégiques.
 
 ---
 
-##  Stack Technique
+## Stack Technique  
 
 | Domaine | Technologies |
 | :--- | :--- |
@@ -14,41 +15,76 @@
 
 ---
 
-## 🔬 Projets Data Science Phares
+## 🔬 Projets Data Science Phares  
 
 ### 🛡️ [Détection de Fraude Bancaire](https://github.com/Dave-kossi/bank-transaction-fraud-detection)
-* **Problématique :** Identifier les transactions frauduleuses sur un dataset déséquilibré (50k entrées).
-* **Modèle :** LightGBM optimisé avec un **AUC de 0.804** et une précision de **99.7%**.
-* **Impact :** Réduction des faux positifs pour améliorer l'expérience client.
+- **Problématique :** Identifier les transactions frauduleuses sur un dataset déséquilibré (50k entrées)  
+- **Modèle :** LightGBM optimisé avec un **AUC de 0.804** et une précision de **99.7%**  
+- **Impact :** Réduction des faux positifs pour améliorer l'expérience client  
+
+---
 
 ### ⚙️ [Maintenance Prédictive Industrielle](https://github.com/Dave-kossi/Predictive-Maintenance-in-industry)
-* **Problématique :** Prédire la fin de vie utile (RUL) d'équipements industriels.
-* **Technique :** Analyse de survie avec le modèle de **Kaplan-Meier**.
-* **Outils :** Python, Lifelines, Streamlit.
+- **Problématique :** Prédire la fin de vie utile (RUL) d'équipements industriels  
+- **Technique :** Analyse de survie avec le modèle de **Kaplan-Meier**  
+- **Outils :** Python, Lifelines, Streamlit  
+
+---
 
 ### 🏥 [Analyse des Coûts médicaux](https://github.com/Dave-kossi/healthcare-cost-analysis)
-* **Problématique :** Prédire les frais médicaux annuels basés sur des variables démographiques.
-* **Insight :** Mise en évidence d'un surcoût de **x4.7** pour les profils fumeurs via Régression Linéaire.
+- **Problématique :** Prédire les frais médicaux annuels basés sur des variables démographiques  
+- **Insight :** Mise en évidence d'un surcoût de **x4.7** pour les profils fumeurs via Régression Linéaire  
 
 ---
 
-##  Expériences & Leadership
-* **Technicien Informatique**| Computer Forever (Togo) :
-* Réduction de **35% des plaintes** via une restructuration du SAV.
-* Augmentation de la clientèle de **15%** grâce à une stratégie de maintenance préventive.
+### 🚲 Collecte et analyse de données vélos (Vélostation Mulhouse)
+- **Technologies :** Python, API REST, Pandas, Data Engineering, Time Series  
+- **Objectif :** Automatiser la collecte de données des stations de vélos en libre-service  
+- **Analyse :** Étude des taux d’occupation et création d’un historique exploitable  
+- **Finalité :** Préparation de données pour des modèles prédictifs de disponibilité  
 
 ---
 
-## Certifications
-* **Machine Learning Specialization** (Stanford / DeepLearning.AI)
-*  **Google Data Analytics Professional Certificate**
-*  **AI in Fraud Detection** (LinkedIn Learning)
+### ⚡ Europa Énergie — Tableau de Bord d’Intelligence Décisionnelle
+- Tableau de bord interactif développé avec Streamlit et Plotly pour analyser la transition énergétique en Europe  
+- Analyse stratégique du mix énergétique et des dynamiques de décarbonation par pays  
+- Analyses avancées : vitesse de transition, clustering et scoring multicritère  
+- Projections jusqu’en 2050 pour anticiper les scénarios énergétiques  
+- Approche data-driven pour la prise de décision en politiques énergétiques  
 
 ---
 
-## 📬 Me contacter
-[![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kossi-noumagno)
-[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:noumagnokossi0@gmail.com)
+## 💼 Expériences & Leadership  
+
+### 💡 Optimisation et Administration Logistique (Bénévolat)  
+**Secours Populaire Français du Haut-Rhin**  
+📅 02/2026 – Aujourd’hui  
+
+- Analyse des flux d’entrées et sorties de stock  
+- Développement de tableaux de bord et d’indicateurs clés (KPI)  
+- Conception d’outils d’aide à la décision pour optimiser la distribution des ressources  
 
 ---
+
+### 💻 Technicien Informatique | Computer Forever (Togo)
+- Réduction de **35% des plaintes** via une restructuration du SAV  
+- Augmentation de la clientèle de **15%** grâce à une stratégie de maintenance préventive  
+
+---
+
+## 🎓 Certifications  
+
+- **Machine Learning Specialization** (Stanford / DeepLearning.AI)  
+- **Google Data Analytics Professional Certificate**  
+- **AI in Fraud Detection** (LinkedIn Learning)  
+
+---
+
+## 📬 Me contacter  
+
+[![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kossi-noumagno)  
+[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:noumagnokossi0@gmail.com)  
+
+---
+
 *✨ "Transformer la complexité des données en clarté décisionnelle."*
