@@ -165,12 +165,19 @@
 - 🏅 Maintenance & Réseaux  
 
 ---
+## 📬 Me contacter  
 
-## 📬 Contact    
-[LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/kossi-noumagno)
-[Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail)](mailto:noumagnokossi0@gmail.com)
+<p align="center">
 
+<a href="https://www.linkedin.com/in/kossi-noumagno">
+  <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>
+</a>
 
+<a href="mailto:noumagnokossi0@gmail.com">
+  <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>
+</a>
+
+</p>
 ---
 
 ⭐ *"Transformer la complexité des données en décisions stratégiques."*
