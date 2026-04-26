@@ -1,12 +1,6 @@
 # 👨‍💻 Kossi Noumagno  
 ###  Data Analyst | Future Data Scientist | AI Enthusiast  
-
-<p align="center">
-  <em>Transformer la complexité des données en décisions stratégiques</em>
-</p>
-
 ---
-
 ## 👋 À propos de moi  
 
 🎓 Étudiant en **Master 1 Ingénierie Mathématique & Data Science**  
