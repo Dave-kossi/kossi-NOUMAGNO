@@ -178,6 +178,5 @@
 </a>
 
 </p>
----
 
 ⭐ *"Transformer la complexité des données en décisions stratégiques."*
