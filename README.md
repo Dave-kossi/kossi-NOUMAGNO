@@ -173,4 +173,4 @@
 
 </p>
 
-⭐ *"Transformer la complexité des données en décisions stratégiques."*
+⭐ **Transformer la complexité des données en décisions stratégiques.**
