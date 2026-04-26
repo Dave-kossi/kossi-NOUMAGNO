@@ -18,7 +18,7 @@
 - ⚙️ Data Engineering  
 - 📈 Visualisation & prise de décision  
 
-🎯 Objectif : devenir **Data Scientist** avec une spécialisation en **finance & e-commerce**
+🎯 Objectif : évoluer vers un poste de **Data Scientist**, avec une spécialisation en **analyse prédictive** et en **gestion des risques**. 
 
 ---
 
