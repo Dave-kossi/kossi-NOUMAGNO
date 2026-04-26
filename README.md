@@ -94,13 +94,13 @@
 
 ---
 
-### 🚲 Analyse des vélos en libre-service  
+### 🚲 Analyse et modélisation des données des vélos en libre-service à Mulhouse (réseau m2A)
 🌐 [🔥 Voir la démo live](https://biketrack-jq9uepdtfbywzdccc5tvim.streamlit.app/)
 
-- Data pipeline via API  
-- Analyse temporelle  
+- Conception d’un pipeline automatisé de collecte de données via API  
+- Analyse de séries temporelles pour comprendre les dynamiques d’utilisation des vélos
 
-💡 **Impact :** Base pour prédiction de disponibilité  
+💡 **Impact :** Développement d’un socle de données permettant la prédiction de la disponibilité des vélos et l’optimisation des stations
 
 ---
 
