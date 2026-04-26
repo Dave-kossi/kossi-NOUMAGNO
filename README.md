@@ -1,5 +1,5 @@
 # 👨‍💻 Kossi Noumagno  
-### 🚀 Data Analyst | Future Data Scientist | AI Enthusiast  
+###  Data Analyst | Future Data Scientist | AI Enthusiast  
 
 <p align="center">
   <em>Transformer la complexité des données en décisions stratégiques</em>
@@ -31,7 +31,7 @@
 
 ---
 
-### 📊 Data Science & Machine Learning  
+### Data Science & Machine Learning  
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas)
 ![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikit-learn)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow)
@@ -64,18 +64,18 @@
 ## 🔬 Projets Data Science  
 
 ### 🛡️ Détection de fraude bancaire  
-👉 [🚀 Voir le projet](https://github.com/Dave-kossi/bank-transaction-fraud-detection)
+👉 [Voir le projet](https://github.com/Dave-kossi/bank-transaction-fraud-detection)
 
 - Dataset déséquilibré (50k transactions)  
 - Modèle **LightGBM**  
-- 📊 AUC : **0.804** | Précision : **99.7%**  
+- AUC : **0.804** | Précision : **99.7%**  
 
 💡 **Impact :** Réduction des faux positifs et amélioration de la détection  
 
 ---
 
 ### ⚙️ Maintenance prédictive industrielle  
-👉 [🚀 Voir le projet](https://github.com/Dave-kossi/Predictive-Maintenance-in-industry)
+👉 [Voir le projet](https://github.com/Dave-kossi/Predictive-Maintenance-in-industry)
 
 - Analyse de survie (**Kaplan-Meier**)  
 - Prédiction de la durée de vie des équipements  
@@ -85,7 +85,7 @@
 ---
 
 ### 🏥 Analyse des coûts médicaux  
-👉 [🚀 Voir le projet](https://github.com/Dave-kossi/healthcare-cost-analysis)
+👉 [Voir le projet](https://github.com/Dave-kossi/healthcare-cost-analysis)
 
 - Régression linéaire  
 - Facteur clé : **x4.7 pour les fumeurs**  
@@ -126,7 +126,7 @@
 
 ## 💼 Expériences  
 
-### 📊 Data & Logistique (Bénévolat)  
+### Data & Logistique (Bénévolat)  
 **Secours Populaire Français**  
 
 - Analyse des flux de stock  
