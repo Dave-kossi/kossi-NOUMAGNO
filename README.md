@@ -77,17 +77,19 @@
 
 ---
 
-### 💻 Technicien Informatique | Computer Forever (Togo)
-- Réduction de **35% des plaintes** via une restructuration du SAV  
-- Augmentation de la clientèle de **15%** grâce à une stratégie de maintenance préventive  
-
+### 💻 Technicien Informatique | Computer Forever (Togo) 2022-2024
+- via une formation d`equipe d`intervation rapide nous avons une réduction de **25% des plaintes** 
+- Grâce à une stratégie de maintenance préventive que j`ai developpee nous avons eu une augmentation de la clientèle de **15%** 
+- Reparation Materielle et Logicielles des equipements informatiques
+- J`ai eu a gerer les parcs informatiques de plusieurs PME sur 15 mois
+  
 ---
 
-## 🎓 Certifications  
-
-- **Machine Learning Specialization** (Stanford / DeepLearning.AI)  
-- **Google Data Analytics Professional Certificate**  
-- **AI in Fraud Detection** (LinkedIn Learning)  
+## 🎓 Certifications et Formation 
+- **Maintenance et Reseaux Informatique (2021-2022)
+- **Machine Learning Specialization** (Stanford / DeepLearning.AI) (2026)
+- **Google Data Analytics Professional Certificate** (2025)
+- **AI in Fraud Detection** (LinkedIn Learning)  (2025)
 
 ---
 
