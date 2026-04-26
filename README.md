@@ -1,103 +1,170 @@
+# 👨‍💻 Kossi Noumagno  
 ### Data Analyst | Future Data Scientist | AI Enthusiast  
 
-Étudiant en **M1 Ingénierie Mathématique & Data Science** à l'Université de Haute-Alsace, je me passionne pour la transformation des données brutes en insights stratégiques.
+🎓 Étudiant en **Master 1 Ingénierie Mathématique & Data Science** à l'Université de Haute-Alsace (France)  
+
+Je suis passionné par l’analyse de données, le machine learning et la transformation de données complexes en **insights exploitables pour la prise de décision**.
 
 ---
 
-## Stack Technique  
+## 🧠 Compétences Techniques  
 
-| Domaine | Technologies |
-| :--- | :--- |
-| **Langages** | ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![SQL](https://img.shields.io/badge/sql-4479A1?style=for-the-badge&logo=postgresql&logoColor=white) ![R](https://img.shields.io/badge/r-%23276DC3.svg?style=for-the-badge&logo=r&logoColor=white) |
-| **Data Science** | ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white) ![Scikit-Learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white) ![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white) |
-| **Visualisation** | ![Power Bi](https://img.shields.io/badge/power_bi-F2C811?style=for-the-badge&logo=microsoftpowerbi&logoColor=black) ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=Streamlit&logoColor=white) ![Plotly](https://img.shields.io/badge/Plotly-%233F4F75.svg?style=for-the-badge&logo=Plotly&logoColor=white) |
-| **Outils** | ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white) ![Kaggle](https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=Kaggle&logoColor=white) ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black) ![Google Cloud](https://img.shields.io/badge/GoogleCloud-%234285F4.svg?style=for-the-badge&logo=google-cloud&logoColor=white) |
+### 🔹 Langages  
+- Python  
+- SQL  
+- R  
 
----
+### 🔹 Data Science & Machine Learning  
+- Pandas  
+- Scikit-learn  
+- TensorFlow  
 
-## 🔬 Projets Data Science Phares  
+### 🔹 Data Engineering & Bases de données  
+- SQL (PostgreSQL)  
+- NoSQL (MongoDB)  
+- API REST  
+- Data Cleaning & Feature Engineering  
 
-### 🛡️ [Détection de Fraude Bancaire](https://github.com/Dave-kossi/bank-transaction-fraud-detection)
-- **Problématique :** Identifier les transactions frauduleuses sur un dataset déséquilibré (50k entrées)  
-- **Modèle :** LightGBM optimisé avec un **AUC de 0.804** et une précision de **99.7%**  
-- **Impact :** Réduction des faux positifs pour améliorer l'expérience client  
+### 🔹 Data Visualisation  
+- Power BI  
+- Plotly  
+- Streamlit  
 
----
-
-### ⚙️ [Maintenance Prédictive Industrielle](https://github.com/Dave-kossi/Predictive-Maintenance-in-industry)
-- **Problématique :** Prédire la fin de vie utile (RUL) d'équipements industriels  
-- **Technique :** Analyse de survie avec le modèle de **Kaplan-Meier**  
-- **Outils :** Python, Lifelines, Streamlit  
-
----
-
-### 🏥 [Analyse des Coûts médicaux](https://github.com/Dave-kossi/healthcare-cost-analysis)
-- **Problématique :** Prédire les frais médicaux annuels basés sur des variables démographiques  
-- **Insight :** Mise en évidence d'un surcoût de **x4.7** pour les profils fumeurs via Régression Linéaire  
+### 🔹 Outils  
+- Git & GitHub  
+- Kaggle  
+- Linux  
+- Google Cloud  
 
 ---
 
-### 🚲 Collecte et analyse de données vélos (Vélostation Mulhouse)
-- **Technologies :** Python, API REST, Pandas, Data Engineering, Time Series  
-- **Objectif :** Automatiser la collecte de données des stations de vélos en libre-service  
-- **Analyse :** Étude des taux d’occupation et création d’un historique exploitable  
-- **Finalité :** Préparation de données pour des modèles prédictifs de disponibilité  
-- 🌐 [Démo live](https://biketrack-jq9uepdtfbywzdccc5tvim.streamlit.app/)
+## 🔬 Projets Data Science  
+
+### 🛡️ Détection de fraude bancaire  
+🔗 https://github.com/Dave-kossi/bank-transaction-fraud-detection  
+
+- Détection de transactions frauduleuses sur un dataset déséquilibré (50 000 lignes)  
+- Modélisation avec **LightGBM**  
+- Performance : **AUC = 0.804 | Précision = 99.7%**  
+- Optimisation du compromis précision / faux positifs  
+
+👉 **Impact :** Amélioration de la détection tout en réduisant les fausses alertes  
 
 ---
 
-### ⚡ Europa Énergie — Tableau de Bord d’Intelligence Décisionnelle
-- Tableau de bord interactif développé avec Streamlit et Plotly pour analyser la transition énergétique en Europe  
-- Analyse stratégique du mix énergétique et des dynamiques de décarbonation par pays  
-- Analyses avancées : vitesse de transition, clustering et scoring multicritère  
-- Projections jusqu’en 2050 pour anticiper les scénarios énergétiques  
-- Approche data-driven pour la prise de décision en politiques énergétiques  
-- 🌐 [Démo live](https://euenergyconsomption-dmjfgddsphmd4ydjqlscgk.streamlit.app/)
----
+### ⚙️ Maintenance prédictive industrielle  
+🔗 https://github.com/Dave-kossi/Predictive-Maintenance-in-industry  
 
-### 🛒 Analyse Interactive des Ventes — Online Retail Dashboard
-- **Technologies :** Python, Pandas, Plotly, Streamlit, Data Cleaning, Feature Engineering  
-- **Objectif :** Transformer un dataset de plus de 500 000 transactions en outil de Business Intelligence interactif  
-- **Analyse :** KPIs financiers, segmentation client RFM et analyse Pareto (80/20)  
-- **Data Engineering :** Nettoyage avancé, gestion des anomalies et création de variables temporelles  
-- **Impact :** Aide à la prise de décision stratégique grâce à une visualisation interactive des performances commerciales  
-- 🌐 [Démo live](https://onlineretailproject-n4u86pch6tfkxqdhtaceco.streamlit.app/)
+- Prédiction de la durée de vie restante (RUL)  
+- Analyse de survie (**Kaplan-Meier**)  
+- Déploiement avec **Streamlit**  
+
+👉 **Impact :** Réduction des coûts de maintenance et anticipation des pannes  
 
 ---
 
-## 💼 Expériences & Leadership  
+### 🏥 Analyse des coûts médicaux  
+🔗 https://github.com/Dave-kossi/healthcare-cost-analysis  
 
-### 💡 Optimisation et Administration Logistique (Bénévolat)  
-**Secours Populaire Français du Haut-Rhin**  
-📅 02/2026 – Aujourd’hui  
+- Modélisation des dépenses de santé  
+- Régression linéaire  
+- Insight clé : coût multiplié par **4.7 chez les fumeurs**  
 
-- Analyse des flux d’entrées et sorties de stock  
-- Développement de tableaux de bord et d’indicateurs clés (KPI)  
-- Conception d’outils d’aide à la décision pour optimiser la distribution des ressources  
+👉 **Impact :** Identification de facteurs de risque majeurs  
 
 ---
 
-### 💻 Technicien Informatique | Computer Forever (Togo) 2022-2024
-- via une formation d`equipe d`intervation rapide nous avons une réduction de **25% des plaintes** 
-- Grâce à une stratégie de maintenance préventive que j`ai developpee nous avons eu une augmentation de la clientèle de **15%** 
-- Reparation Materielle et Logicielles des equipements informatiques
-- J`ai eu a gerer les parcs informatiques de plusieurs PME sur 15 mois
-  
+### 🚲 Analyse des vélos en libre-service (Mulhouse)  
+🌐 https://biketrack-jq9uepdtfbywzdccc5tvim.streamlit.app/  
+
+- Collecte automatisée via API  
+- Analyse temporelle des taux d’occupation  
+- Création d’un dataset exploitable  
+
+👉 **Impact :** Base pour modèles prédictifs de disponibilité  
+
 ---
 
-## 🎓 Certifications et Formation 
-- **Maintenance et Reseaux Informatique (2021-2022)
-- **Machine Learning Specialization** (Stanford / DeepLearning.AI) (2026)
-- **Google Data Analytics Professional Certificate** (2025)
-- **AI in Fraud Detection** (LinkedIn Learning)  (2025)
+### ⚡ Europa Énergie – Dashboard décisionnel  
+🌐 https://euenergyconsomption-dmjfgddsphmd4ydjqlscgk.streamlit.app/  
+
+- Analyse du mix énergétique européen  
+- Clustering et scoring multicritère  
+- Projections jusqu’en 2050  
+
+👉 **Impact :** Aide à la décision stratégique  
+
+---
+
+### 🛒 Analyse des ventes – Dashboard interactif  
+🌐 https://onlineretailproject-n4u86pch6tfkxqdhtaceco.streamlit.app/  
+
+- Analyse de 500 000+ transactions  
+- Segmentation client (RFM)  
+- Analyse Pareto (80/20)  
+- Création de KPIs  
+
+👉 **Impact :** Support à la prise de décision business  
+
+---
+
+## 💼 Expériences  
+
+### 📊 Data & Logistique (Bénévolat)  
+**Secours Populaire Français – Haut-Rhin**  
+📅 2026 – Aujourd’hui  
+
+- Analyse des flux de stock  
+- Création de tableaux de bord et KPIs  
+- Développement d’outils d’aide à la décision  
+
+👉 **Impact :** Optimisation de la distribution des ressources  
+
+---
+
+### 💻 Technicien Informatique  
+**Computer Forever (Togo)** | 2022 – 2024  
+
+- Gestion de parcs informatiques pour PME  
+- Maintenance préventive et corrective  
+- Réduction des plaintes clients de **25%**  
+- Augmentation de la clientèle de **15%**  
+
+👉 **Impact :** Amélioration de la qualité de service  
+
+---
+
+## 🎓 Formation  
+
+- **Master 1 Ingénierie Mathématique & Data Science** – Université de Haute-Alsace (2025 – 2026)  
+- **Licence Mathématiques Appliquées** – Université de Haute-Alsace (2024 – 2025)  
+- **Licence Fondamentale de Mathématiques** – Université de Lomé (2019 – 2023)  
+
+---
+
+## 📜 Certifications  
+
+- Google Data Analytics Professional Certificate (2025)  
+- Machine Learning Specialization – Stanford / DeepLearning.AI (2026)  
+- AI in Fraud Detection – LinkedIn Learning (2025)  
+- Maintenance et Réseaux Informatiques (2022)  
 
 ---
 
 ## 📬 Me contacter  
 
-[![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kossi-noumagno)  
-[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:noumagnokossi0@gmail.com)  
+- 🔗 LinkedIn : https://www.linkedin.com/in/kossi-noumagno  
+- 📧 Email : noumagnokossi0@gmail.com  
 
 ---
 
-*✨ "Transformer la complexité des données en clarté décisionnelle."*
+## ✨ À propos de moi  
+
+💡 Je cherche à évoluer vers un poste de **Data Scientist / Data Analyst**, avec un intérêt particulier pour :  
+- la finance  
+- l’e-commerce  
+- les systèmes intelligents  
+
+---
+
+⭐ *"Transformer la complexité des données en décisions stratégiques."*
