@@ -1,22 +1,22 @@
-# 👨‍💻 Kossi Noumagno  
+#  Kossi Noumagno  
 ###  Data Analyst | Future Data Scientist | AI Enthusiast  
 ---
-## 👋 À propos de moi  
+##  À propos de moi  
 
-🎓 Étudiant en **Master 1 Ingénierie Mathématique & Data Science**  
-📍 Université de Haute-Alsace – France  
+Étudiant en **Master 1 Ingénierie Mathématique & Data Science**  
+Université de Haute-Alsace – France  
 
 💡 Passionné par :  
-- 📊 Data Analysis  
-- 🤖 Machine Learning  
-- ⚙️ Data Engineering  
-- 📈 Visualisation & prise de décision  
+- Data Analysis  
+- Machine Learning  
+- Data Engineering  
+- Visualisation & prise de décision  
 
-🎯 Objectif : évoluer vers un poste de **Data Scientist**, avec une spécialisation en **analyse prédictive** et en **gestion des risques**. 
+Objectif : évoluer vers un poste de **Data Scientist**, avec une spécialisation en **analyse prédictive** et en **gestion des risques**. 
 
 ---
 
-## 🧠 Stack Technique  
+## Stack Technique  
 
 ### 💻 Langages  
 ![Python](https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
@@ -108,7 +108,7 @@
 
 ---
 
-### 🛒 Analyse des ventes – Dashboard interactif  
+### 🛒 Analyse des ventes (d`une boutique en Angleterre)– Dashboard interactif  
 🌐 [🔥 Voir la démo](https://onlineretailproject-n4u86pch6tfkxqdhtaceco.streamlit.app/)
 
 - 500k+ transactions  
@@ -121,7 +121,7 @@
 ## 💼 Expériences  
 
 ### Data & Logistique (Bénévolat)  
-**Secours Populaire Français**  
+**Secours Populaire Français 02/2026**  
 
 - Analyse des flux de stock  
 - Création de KPIs  
@@ -132,7 +132,7 @@
 ---
 
 ### 💻 Technicien Informatique  
-**Computer Forever (Togo)**  
+**Computer Forever (Togo) [2022-2024]**  
 
 - Gestion de parcs informatiques  
 - Maintenance préventive  
