@@ -132,7 +132,7 @@ Objectif : évoluer vers un poste de **Data Scientist**, avec une spécialisatio
 ---
 
 ### 💻 Technicien Informatique  
-**Computer Forever (Togo) [2022-2024]**  
+**Computer Forever (Togo) 2022-2024**  
 
 - Gestion de parcs informatiques  
 - Maintenance préventive  
@@ -145,9 +145,9 @@ Objectif : évoluer vers un poste de **Data Scientist**, avec une spécialisatio
 
 ## 🎓 Formation  
 
-- 🎓 Master 1 Ingénierie Mathématique & Data Science – Université de Haute-Alsace  
-- 🎓 Licence Mathématiques Appliquées – Université de Haute-Alsace  
-- 🎓 Licence Mathématiques – Université de Lomé  
+- 🎓 Master 1 Ingénierie Mathématique & Data Science – Université de Haute-Alsace|2025-2027 
+- 🎓 Licence Mathématiques Appliquées – Université de Haute-Alsace|2024-2025
+- 🎓 Licence Fondamentale en Mathématiques – Université de Lomé|2019-2023
 
 ---
 
