@@ -1,5 +1,5 @@
 # Kossi NOUMAGNO
-### 📊 Junior Data Scientist | AI Engineer | Mathematical Engineer (M2)
+### Junior Data Scientist | AI Engineer | Mathematical Engineer (M2)
 **Specialized in Mathematical Modeling, Data Science & Machine Learning**
 
 <p align="center">
@@ -32,7 +32,7 @@
 
 ---
 
-### 🧠 Data Science & Machine Learning
+###  Data Science & Machine Learning
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas)
 ![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikit-learn)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow)
@@ -72,60 +72,14 @@
 
 ## 🎓 Projets Universitaires & Recherche Académique
 
-### 🛡️ Projet de Détection de Fraude Bancaire (Master 1)
+### 🛡️ Détection de Fraude Bancaire Optimisée (Master 1)
 👉 [Lien vers le dépôt du projet](https://github.com/Dave-kossi/bank-transaction-fraud-detection)
 
-#### 📋 Contexte & Enjeux
-La fraude bancaire représente un défi critique pour les institutions financières, générant chaque année des pertes de plusieurs milliards d'euros (usurpation d'identité, transactions non autorisées). L’impact est double : **financier direct** (remboursements) et **réputationnel** (perte de confiance).
-
-#### 💰 Impact Économique du Risque
-Chaque fraude non détectée entraîne un coût de remboursement moyen de **3,10 €** pour l’institution. Le passage à l'échelle via le Machine Learning est indispensable face à l'impossibilité d'un contrôle manuel sur des millions de transactions quotidiennes.
-
-| Volume de fraudes non détectées | Coût direct des remboursements |
-| :--- | :--- |
-| **1 000** | 3 100 € |
-| **10 000** | 31 000 € |
-| **100 000** | 310 000 € |
-*> Note : Ces calculs excluent les coûts administratifs d'enquête et les pertes de réputation.*
-
-#### 🎯 Objectifs du Projet
-* **Maximiser le Rappel (Recall)** pour capturer le plus grand volume de fraudes possible.
-* **Garantir une Précision chirurgicale** afin de limiter les faux positifs (blocages de clients légitimes).
-* **Optimiser le coût-bénéfice global** du système d'alerte en temps réel.
-
-#### 🛠️ Approche Méthodologique & Stack
-* **Exploration & Analyse (EDA)** : Identification des patterns de fraude à travers une distribution omnicanale.
-* **Feature Engineering** : Création de variables de contexte (comportements récents sur 7 jours, géolocalisation, ratios transactionnels).
-* **Modélisation & Benchmarking** : Évaluation comparative de 5 architectures (*Logistic Regression, Random Forest, GBDT, XGBoost, LightGBM*) avec gestion des classes hautement déséquilibrées (Dataset de 50k+ transactions).
-* **Validation** : Protocoles de *5-Fold Cross-Validation* pour valider la robustesse opérationnelle.
-
-#### 📊 Analyse Visuelle & Insights du Dashboard
-* **Omnicanalité de la fraude** : La répartition est uniforme entre les terminaux (**Mobile, Tablette, Laptop à ~33%**), prouvant qu'aucun canal n'est intrinsèquement sécurisé.
-* **Réseaux de paiement** : Volumes de fraude identiques entre *Mastercard, Visa, Amex et Discover (~25%)*, confirmant que les attaques ciblent la transaction et non l'infrastructure de la carte.
-* **Limites de l'authentification classique** : Les transactions frauduleuses affichent des taux de réussite similaires, qu'elles utilisent l'**OTP**, la **Biométrie** ou le **PIN**. Cela démontre la nécessité d'une IA capable de détecter des signaux faibles comportementaux en amont de l'authentification.
-
-#### 📈 Évaluation de la Performance & Compromis Précision/Rappel
-* **Régression Logistique (Baseline)** : Très fort Rappel (**0.916**), mais sa faible précision (**0.349**) paralyserait l'expérience client en bloquant trop de transactions légitimes.
-* **Modèles d'Ensemble (RF, GB, XGB)** : Offrent une précision proche de **1.000** mais tendent à laisser passer les fraudes subtiles.
-* **Arbitrage Final** : **LightGBM** est sélectionné. Il offre le meilleur équilibre industriel avec une Précision de **99.7%** et le meilleur Rappel des modèles d'ensemble (**62.0%**).
-
-#### 🧠 Analyse de l'Interprétabilité (XAI) : Pourquoi le modèle prédit la fraude ?
-1. **Régression Logistique** : Se focalise exclusivement sur le signal maître `Failed_Transaction_Count_7d` (Score : 1.0).
-2. **Random Forest & XGBoost** : Atteignent une précision maximale (jusqu'à 99.9%) en intégrant la distance (`Transaction_Distance`), l'âge de la carte (`Card_Age`) et les validations de sécurité (IP, Authentification).
-3. **LightGBM (Modèle Final)** : Distribue son importance de manière beaucoup plus équilibrée. Il ne dépend pas uniquement des échecs de paiement passés, ce qui lui permet de capturer les **"fraudes propres"** (première tentative réussie par un fraudeur expérimenté) en croisant :
-    * Le ratio **Montant de la transaction / Solde du compte** (`Transaction_Amount` vs `Account_Balance`).
-    * La déviation par rapport à la **moyenne hebdomadaire** du client (`Avg_Transaction_Amount_7d`).
-    * L'incohérence de la **distance géographique** (`Transaction_Distance`).
-
-#### 💰 Impact Économique et ROI (Exemple sur 10 000 transactions)
-
-| Stratégie appliquée | Fraudes manquées | Coût financier des pertes | Économie nette réalisée |
-| :--- | :---: | :---: | :---: |
-| Sans système de détection | 100 | 310,00 € | *Référence* |
-| **Avec IA (LightGBM)** | **38** | **117,80 €** | **+ 192,20 €** |
-
-#### 🏁 Conclusion Métier
-Les **0.2% de gain en Rappel** affichés par LightGBM face aux autres modèles d'ensemble ne sont pas une simple fluctuation mathématique : ils représentent la détection des fraudes complexes et silencieuses. En combinant cette couverture de risque à une Précision de **99.7%**, LightGBM s'impose comme l'architecture la plus résiliente pour protéger les actifs de l'institution sans dégrader l'expérience utilisateur.
+*   **Objectif :** Concevoir une architecture de Machine Learning capable de détecter les transactions frauduleuses omnicanales en temps réel, minimisant les pertes financières tout en préservant l'expérience client (limitation des faux positifs).
+*   **Méthodologie & Stack :** feature engineering comportemental, gestion du fort déséquilibre de classes (50k+ lignes) et benchmarking d'algorithmes (*Logistic Regression, Random Forest, XGBoost, LightGBM*). Validation robuste par *5-Fold Cross-Validation*.
+*   **Arbitrage Technique (Précision/Rappel) :** Sélection de **LightGBM** comme modèle final. Il offre le meilleur équilibre industriel avec une **Précision chirurgicale de 99.7%** (pour éviter de bloquer des clients légitimes) et un **Rappel de 62.0%** (capturant efficacement les fraudes complexes là où les règles de sécurité classiques comme l'OTP ou le PIN échouent).
+*   **Interprétabilité (XAI) :** Le modèle fonde ses prédictions sur le croisement de signaux faibles : le ratio montant/solde du compte (`Transaction_Amount` vs `Account_Balance`), la déviation par rapport à la moyenne hebdomadaire (`Avg_Transaction_Amount_7d`) et l'incohérence géographique (`Transaction_Distance`).
+*   **Impact Économique :** Coût moyen d'une fraude non détectée estimé à **3,10 €**. Sur une simulation de 10 000 transactions, le déploiement de LightGBM **réduit les pertes financières de 62%** (coût chutant de 310,00 € à 117,80 €), maximisant directement le ROI opérationnel.
 
 ---
 
