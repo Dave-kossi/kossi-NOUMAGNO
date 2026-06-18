@@ -38,7 +38,7 @@
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow)
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch)
 
-🧩 NumPy | Modélisation mathématique | Probabilités et Statistiques | LightGBM | XGBoost | Lifelines
+🧩 NumPy | Modélisation mathématique | Probabilités et Statistiques 
 
 ---
 
