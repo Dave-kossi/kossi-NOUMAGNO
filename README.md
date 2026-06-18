@@ -1,5 +1,5 @@
 # Kossi NOUMAGNO
-### Junior Data Scientist | AI Engineer | Mathematical Engineer (M2)
+###  Junior Data Scientist | AI Engineer | Mathematical Engineer (M2)
 **Specialized in Mathematical Modeling, Data Science & Machine Learning**
 
 <p align="center">
@@ -32,13 +32,13 @@
 
 ---
 
-###  Data Science & Machine Learning
+### 🧠 Data Science & Machine Learning
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas)
 ![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikit-learn)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow)
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch)
 
-🧩 NumPy | Modélisation mathématique | Probabilités et Statistiques 
+🧩 NumPy | Modélisation mathématique 
 
 ---
 
@@ -72,11 +72,25 @@
 
 ## 🎓 Projets Universitaires & Recherche Académique
 
+### 🌀 PINNs pour Systèmes Dynamiques Chaotiques (Master 1)
+👉 [Lien vers le dépôt du projet](https://github.com/Dave-kossi/PINN-Fourier-Lorenz)
+
+*   **Objectif :** Résoudre et reconstruire le système chaotique hautement non linéaire de Lorenz ($\sigma = 10, \rho = 28, \beta = 8/3$) à l'aide de réseaux de neurones informés par la physique (**PINNs**). L'étude compare une architecture standard à une version améliorée par des plongements de Fourier pour atténuer le biais spectral du MLP et capturer les hautes fréquences dynamiques.
+*   **Méthodologie & Architecture :** MLP à 4 couches cachées (256 neurones, activation `tanh`) entraîné sur 500 points de référence RK45 et 1000 points de collocation. Implémentation d'un encodage sinusoïdal multicouche pour les fréquences $f_k \in \{1,2,4,8,16,32\}$. La fonction de perte combine la supervision des données et les résidus physiques de l'EDO :
+$$\mathcal{L} = \lambda_{data}\mathcal{L}_{data} + \lambda_{ODE}\mathcal{L}_{ODE}$$
+*   **Stratégie d'Optimisation :** Stratégie de *curriculum learning* en trois étapes : pré-entraînement supervisé, introduction progressive des contraintes de l'EDO, et raffinement final via l'optimiseur **L-BFGS**.
+*   **Résultats Comparatifs (Erreur Globale $L_2$) :**
+    *   *Problème Direct (Prédiction de l'état complet) :* Standard PINN = 0.105 vs **PINN-Fourier = 0.061**
+    *   *Problèmes Inverses (Observabilité partielle via un seul capteur) :* L'architecture PINN-Fourier surpasse systématiquement le modèle standard, identifiant la variable $y(t)$ comme la plus informative pour reconstruire l'attracteur étrange (Erreur réduite à **0.197**).
+*   **Applications Métier :** Jumeaux numériques en ingénierie, assimilation de données en météorologie, réduction du nombre de capteurs physiques requis pour la surveillance industrielle active.
+
+---
+
 ### 🛡️ Détection de Fraude Bancaire Optimisée (Master 1)
 👉 [Lien vers le dépôt du projet](https://github.com/Dave-kossi/bank-transaction-fraud-detection)
 
 *   **Objectif :** Concevoir une architecture de Machine Learning capable de détecter les transactions frauduleuses omnicanales en temps réel, minimisant les pertes financières tout en préservant l'expérience client (limitation des faux positifs).
-*   **Méthodologie & Stack :** feature engineering comportemental, gestion du fort déséquilibre de classes (50k+ lignes) et benchmarking d'algorithmes (*Logistic Regression, Random Forest, XGBoost, LightGBM*). Validation robuste par *5-Fold Cross-Validation*.
+*   **Méthodologie & Stack :** Feature engineering comportemental, gestion du fort déséquilibre de classes (50k+ lignes) et benchmarking d'algorithmes (*Logistic Regression, Random Forest, XGBoost, LightGBM*). Validation robuste par *5-Fold Cross-Validation*.
 *   **Arbitrage Technique (Précision/Rappel) :** Sélection de **LightGBM** comme modèle final. Il offre le meilleur équilibre industriel avec une **Précision chirurgicale de 99.7%** (pour éviter de bloquer des clients légitimes) et un **Rappel de 62.0%** (capturant efficacement les fraudes complexes là où les règles de sécurité classiques comme l'OTP ou le PIN échouent).
 *   **Interprétabilité (XAI) :** Le modèle fonde ses prédictions sur le croisement de signaux faibles : le ratio montant/solde du compte (`Transaction_Amount` vs `Account_Balance`), la déviation par rapport à la moyenne hebdomadaire (`Avg_Transaction_Amount_7d`) et l'incohérence géographique (`Transaction_Distance`).
 *   **Impact Économique :** Coût moyen d'une fraude non détectée estimé à **3,10 €**. Sur une simulation de 10 000 transactions, le déploiement de LightGBM **réduit les pertes financières de 62%** (coût chutant de 310,00 € à 117,80 €), maximisant directement le ROI opérationnel.
@@ -99,7 +113,7 @@ Démonstration rigoureuse de la convergence théorique complétée par une valid
 
 ---
 
-## 🚀 Projets Data Science & Machine Learning (Personnels & R&D)
+##  Projets Data Science & Machine Learning (Personnels & R&D)
 
 ### ⚡ Europa Énergie – Intelligence Décisionnelle & Modélisation Prospective
 🌐 [🔥 Voir la démo live](https://euenergyconsomption-dmjfgddsphmd4ydjqlscgk.streamlit.app/)
