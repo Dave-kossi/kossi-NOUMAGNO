@@ -83,18 +83,6 @@ $$\mathcal{L} = \lambda_{data}\mathcal{L}_{data} + \lambda_{ODE}\mathcal{L}_{ODE
     *   *Problème Direct (Prédiction de l'état complet) :* Standard PINN = 0.105 vs **PINN-Fourier = 0.061**
     *   *Problèmes Inverses (Observabilité partielle via un seul capteur) :* L'architecture PINN-Fourier surpasse systématiquement le modèle standard, identifiant la variable $y(t)$ comme la plus informative pour reconstruire l'attracteur étrange (Erreur réduite à **0.197**).
 *   **Applications Métier :** Jumeaux numériques en ingénierie, assimilation de données en météorologie, réduction du nombre de capteurs physiques requis pour la surveillance industrielle active.
-
----
-
-### 🛡️ Détection de Fraude Bancaire Optimisée (Master 1)
-👉 [Lien vers le dépôt du projet](https://github.com/Dave-kossi/bank-transaction-fraud-detection)
-
-*   **Objectif :** Concevoir une architecture de Machine Learning capable de détecter les transactions frauduleuses omnicanales en temps réel, minimisant les pertes financières tout en préservant l'expérience client (limitation des faux positifs).
-*   **Méthodologie & Stack :** Feature engineering comportemental, gestion du fort déséquilibre de classes (50k+ lignes) et benchmarking d'algorithmes (*Logistic Regression, Random Forest, XGBoost, LightGBM*). Validation robuste par *5-Fold Cross-Validation*.
-*   **Arbitrage Technique (Précision/Rappel) :** Sélection de **LightGBM** comme modèle final. Il offre le meilleur équilibre industriel avec une **Précision chirurgicale de 99.7%** (pour éviter de bloquer des clients légitimes) et un **Rappel de 62.0%** (capturant efficacement les fraudes complexes là où les règles de sécurité classiques comme l'OTP ou le PIN échouent).
-*   **Interprétabilité (XAI) :** Le modèle fonde ses prédictions sur le croisement de signaux faibles : le ratio montant/solde du compte (`Transaction_Amount` vs `Account_Balance`), la déviation par rapport à la moyenne hebdomadaire (`Avg_Transaction_Amount_7d`) et l'incohérence géographique (`Transaction_Distance`).
-*   **Impact Économique :** Coût moyen d'une fraude non détectée estimé à **3,10 €**. Sur une simulation de 10 000 transactions, le déploiement de LightGBM **réduit les pertes financières de 62%** (coût chutant de 310,00 € à 117,80 €), maximisant directement le ROI opérationnel.
-
 ---
 
 ### 🎲 Modélisation Stochastique : Chaînes de Markov appliquées au Jeu de Kruskal (L3)
@@ -114,6 +102,19 @@ Démonstration rigoureuse de la convergence théorique complétée par une valid
 ---
 
 ##  Projets Data Science & Machine Learning (Personnels & R&D)
+
+---
+
+### 🛡️ Détection de Fraude Bancaire Optimisée
+👉 [Lien vers le dépôt du projet](https://github.com/Dave-kossi/bank-transaction-fraud-detection)
+
+*   **Objectif :** Concevoir une architecture de Machine Learning capable de détecter les transactions frauduleuses omnicanales en temps réel, minimisant les pertes financières tout en préservant l'expérience client (limitation des faux positifs).
+*   **Méthodologie & Stack :** Feature engineering comportemental, gestion du fort déséquilibre de classes (50k+ lignes) et benchmarking d'algorithmes (*Logistic Regression, Random Forest, XGBoost, LightGBM*). Validation robuste par *5-Fold Cross-Validation*.
+*   **Arbitrage Technique (Précision/Rappel) :** Sélection de **LightGBM** comme modèle final. Il offre le meilleur équilibre industriel avec une **Précision chirurgicale de 99.7%** (pour éviter de bloquer des clients légitimes) et un **Rappel de 62.0%** (capturant efficacement les fraudes complexes là où les règles de sécurité classiques comme l'OTP ou le PIN échouent).
+*   **Interprétabilité (XAI) :** Le modèle fonde ses prédictions sur le croisement de signaux faibles : le ratio montant/solde du compte (`Transaction_Amount` vs `Account_Balance`), la déviation par rapport à la moyenne hebdomadaire (`Avg_Transaction_Amount_7d`) et l'incohérence géographique (`Transaction_Distance`).
+*   **Impact Économique :** Coût moyen d'une fraude non détectée estimé à **3,10 €**. Sur une simulation de 10 000 transactions, le déploiement de LightGBM **réduit les pertes financières de 62%** (coût chutant de 310,00 € à 117,80 €), maximisant directement le ROI opérationnel.
+  
+---
 
 ### ⚡ Europa Énergie – Intelligence Décisionnelle & Modélisation Prospective
 🌐 [🔥 Voir la démo live](https://euenergyconsomption-dmjfgddsphmd4ydjqlscgk.streamlit.app/)
