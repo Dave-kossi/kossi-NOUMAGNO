@@ -182,7 +182,7 @@ Déploiement d'une application de Business Intelligence (Streamlit/Plotly) perme
 
 ## 💼 Expérience & Leadership
 
-### 📊 Optimisation et Administration logistique (Bénévolat)
+###  Optimisation et Administration logistique (Bénévolat)
 **Secours Populaire Français du Haut-Rhin (France)** | *02/2026 - Aujourd'hui*
 * Analyse des flux d'entrées et de sorties de stock.
 * Traitement des anomalies de saisie et modélisation de la rotation des stocks.
