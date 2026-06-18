@@ -73,7 +73,7 @@
 ## 🎓 Projets Universitaires & Recherche Académique
 
 ### 🌀 PINNs pour Systèmes Dynamiques Chaotiques (Master 1)
-👉 [Lien vers le dépôt du projet](https://github.com/Dave-kossi/PINN-Fourier-Lorenz)
+👉 [Lien vers le dépôt du projet](https://github.com/Dave-kossi/PINNs-for-chaotic-system)
 
 *   **Objectif :** Résoudre et reconstruire le système chaotique hautement non linéaire de Lorenz ($\sigma = 10, \rho = 28, \beta = 8/3$) à l'aide de réseaux de neurones informés par la physique (**PINNs**). L'étude compare une architecture standard à une version améliorée par des plongements de Fourier pour atténuer le biais spectral du MLP et capturer les hautes fréquences dynamiques.
 *   **Méthodologie & Architecture :** MLP à 4 couches cachées (256 neurones, activation `tanh`) entraîné sur 500 points de référence RK45 et 1000 points de collocation. Implémentation d'un encodage sinusoïdal multicouche pour les fréquences $f_k \in \{1,2,4,8,16,32\}$. La fonction de perte combine la supervision des données et les résidus physiques de l'EDO :
