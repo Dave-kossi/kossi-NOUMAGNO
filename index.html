@@ -550,6 +550,7 @@
       <div class="ticker-item"><span class="ticker-num">95%</span><span class="ticker-label">intervalle de confiance — projections énergie 2050</span></div>
       <div class="ticker-item"><span class="ticker-num">500k+</span><span class="ticker-label">lignes — segmentation RFM e-commerce</span></div>
       <div class="ticker-item"><span class="ticker-num">−42%</span><span class="ticker-label">erreur L2 — PINNs système de Lorenz</span></div>
+      <div class="ticker-item"><span class="ticker-num">100%</span><span class="ticker-label">stations couvertes — VeloTrack Mulhouse</span></div>
       <!-- duplicate for seamless loop -->
       <div class="ticker-item"><span class="ticker-num">99.7%</span><span class="ticker-label">précision — détection de fraude bancaire</span></div>
       <div class="ticker-item"><span class="ticker-num">−62%</span><span class="ticker-label">pertes financières simulées</span></div>
@@ -557,6 +558,7 @@
       <div class="ticker-item"><span class="ticker-num">95%</span><span class="ticker-label">intervalle de confiance — projections énergie 2050</span></div>
       <div class="ticker-item"><span class="ticker-num">500k+</span><span class="ticker-label">lignes — segmentation RFM e-commerce</span></div>
       <div class="ticker-item"><span class="ticker-num">−42%</span><span class="ticker-label">erreur L2 — PINNs système de Lorenz</span></div>
+      <div class="ticker-item"><span class="ticker-num">100%</span><span class="ticker-label">stations couvertes — VeloTrack Mulhouse</span></div>
     </div>
   </div>
 </section>
@@ -637,7 +639,7 @@
         <div class="section-num">02 — Projets</div>
         <h2>De la recherche académique à l'impact métier</h2>
       </div>
-      <div class="section-note">Six projets, deux fils conducteurs : finance &amp; risque, énergie &amp; industrie.</div>
+      <div class="section-note">Sept projets, trois fils conducteurs : finance &amp; risque, énergie &amp; industrie, data engineering.</div>
     </div>
 
     <div class="case finance">
@@ -771,6 +773,32 @@
 
     <div class="case research">
       <div class="case-index reveal">06</div>
+      <div class="reveal">
+        <span class="case-tag">Data Engineering · Temps réel</span>
+        <h3>VeloTrack Mulhouse — Collecte de données temps réel</h3>
+        <p class="case-desc">
+          Collecteur automatique de données pour le réseau Vélostation de l'agglomération mulhousienne (m2A) :
+          capture en temps réel de l'état de toutes les stations via l'API GBFS de Nextbike, calcul d'un score
+          de tension par station et archivage horodaté pour constituer un jeu de données d'entraînement ML.
+        </p>
+        <div class="case-stack">Python · Streamlit · API GBFS · Pandas · Time Series</div>
+        <div class="case-links">
+          <a href="https://biketrack-jq9uepdtfbywzdccc5tvim.streamlit.app/" target="_blank" rel="noopener">Démo live →</a>
+          <a href="https://github.com/Dave-kossi/Bike_Track/tree/main" target="_blank" rel="noopener">Code GitHub →</a>
+        </div>
+      </div>
+      <div class="case-stats reveal">
+        <div class="stat-row"><span class="num">100%</span><span class="desc">stations de l'agglomération couvertes</span></div>
+        <div class="stat-row"><span class="num">3 niveaux</span><span class="desc">score de tension (urgence / tension / ok)</span></div>
+      </div>
+      <div class="case-impact reveal">
+        <span class="impact-label">Lecture décideur</span>
+        <p class="impact-text">Une station de vélos vide ou pleine est un usager perdu. Ce pipeline <strong>identifie en temps réel les stations critiques</strong> et constitue l'historique nécessaire pour prédire les besoins de régulation — la base d'un système de réallocation proactive des vélos plutôt que réactive.</p>
+      </div>
+    </div>
+
+    <div class="case research">
+      <div class="case-index reveal">07</div>
       <div class="reveal">
         <span class="case-tag">Recherche · Deep Learning</span>
         <h3>PINNs pour systèmes dynamiques chaotiques</h3>
