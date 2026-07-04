@@ -1,5 +1,5 @@
 # Kossi NOUMAGNO
-### Data Scientist Junior | AI Engineer | Ingénieur Mathématique (M2)
+### Data Scientist Junior | ML Engineer | Ingénieur Mathématique (M2)
 
 📍 Mulhouse, France · 🎓 Master 2 Ingénierie Mathématique & Data Science — Université de Haute-Alsace
 🎯 Recherche un stage **Data Scientist / AI Engineer** à partir de **mars 2027** — secteurs Finance, Banque, Énergie
