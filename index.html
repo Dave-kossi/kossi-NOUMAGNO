@@ -371,7 +371,7 @@
             <li>RAG · LlamaIndex</li>
             <li>Hugging Face · Ollama</li>
             <li>Recherche hybride</li>
-            <li>LLM locaux (Mistral, Llama, Gemma)</li>
+            <li>LLM locaux (Mistral)</li>
           </ul>
         </div>
         <div class="skill-block">
@@ -523,9 +523,29 @@
                 <div class="bug-fix">BAAI/bge-large-en-v1.5 dégradait silencieusement le retrieval dense. → <span>Migration vers paraphrase-multilingual-MiniLM-L12-v2</span></div>
               </div>
             </li>
-    
             <li class="bug-item">
               <span class="bug-num">Bug 2</span>
+              <div class="bug-content">
+                <div class="bug-title">Arrêté sur les animaux domestiques classé "bâtiment existant"</div>
+                <div class="bug-fix">Le hook de classification basé sur l'année capturait tout fichier contenant "2006". → <span>Ordre des conditions réécrit du plus spécifique au plus générique</span></div>
+              </div>
+            </li>
+            <li class="bug-item">
+              <span class="bug-num">Bug 3</span>
+              <div class="bug-content">
+                <div class="bug-title">564 micro-chunks pour un seul document</div>
+                <div class="bug-fix">Titres de 2 mots et lignes vides généraient du bruit, causant un timeout Mistral. → <span>Filtre MIN_CHUNK_CHARS=100 + fallback SentenceSplitter</span></div>
+              </div>
+            </li>
+            <li class="bug-item">
+              <span class="bug-num">Bug 4</span>
+              <div class="bug-content">
+                <div class="bug-title">Export PDF 0 byte sans erreur visible</div>
+                <div class="bug-fix">fpdf2 retourne un bytearray — st.download_button attend des bytes. → <span>Conversion explicite bytes() + gestion différenciée des types</span></div>
+              </div>
+            </li>
+            <li class="bug-item">
+              <span class="bug-num">Bug 5</span>
               <div class="bug-content">
                 <div class="bug-title">Hallucination de source réglementaire</div>
                 <div class="bug-fix">Mistral citait un arrêté lu en mention dans un autre texte, absent du corpus. → <span>SimilarityPostprocessor (seuil 0.05) + prompt d'arbitrage renforcé</span></div>
@@ -731,7 +751,7 @@
     </div>
     <div class="contact-grid">
       <div class="contact-lead reveal">
-        Disponible pour un stage <em>Data Scientist / AI Engineer</em> à partir de mars 2027,
+        Disponible pour un stage <em>Data Scientist / ML Engineer</em> à partir de mars 2027,
         dans les secteurs Finance, Banque ou Énergie.
       </div>
       <ul class="contact-list reveal">
