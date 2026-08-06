@@ -152,9 +152,9 @@
   .project-desc{color:var(--ink-soft);font-size:0.92rem;line-height:1.65;margin-bottom:18px;flex:1}
   .project-stack{font-family:var(--font-mono);font-size:0.75rem;color:var(--ink-muted);margin-bottom:20px;display:flex;flex-wrap:wrap;gap:6px}
   .project-stack span{background:var(--bg-subtle);padding:3px 8px;border-radius:4px;border:1px solid var(--line)}
-  .project-links{display:flex;gap:18px;margin-top:auto}
-  .project-links a{font-size:0.85rem;font-weight:600;color:var(--ink);display:flex;align-items:center;gap:6px;transition:color 0.2s}
-  .project-links a:hover{color:var(--accent)}
+  .project-links{display:flex;gap:18px;margin-top:20px;padding-top:16px;border-top:1px solid var(--line);flex-wrap:wrap}
+  .project-links a{font-size:0.85rem;font-weight:600;color:var(--accent);display:flex;align-items:center;gap:6px;transition:all 0.2s;border-bottom:1px solid var(--accent);padding-bottom:2px}
+  .project-links a:hover{color:var(--ink);border-bottom-color:var(--ink)}
   .project-links a svg{width:14px;height:14px}
   .project-stats{display:flex;gap:12px;margin-top:20px;flex-wrap:wrap}
   .project-stats .stat{background:var(--bg-subtle);border:1px solid var(--line);border-radius:var(--radius-sm);padding:10px 16px;min-width:90px}
@@ -196,10 +196,14 @@
   .contact-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:64px;align-items:end}
   .contact-lead{font-size:clamp(1.6rem,3vw,2.4rem);font-weight:800;line-height:1.2;letter-spacing:-0.02em;max-width:560px}
   .contact-lead em{color:var(--accent);font-style:normal}
-  .contact-list{list-style:none;margin-top:32px}
-  .contact-list li{margin-bottom:16px}
-  .contact-list a{font-family:var(--font-mono);font-size:0.92rem;color:var(--ink-soft);border-bottom:1px solid var(--line);padding-bottom:3px;transition:all 0.2s}
-  .contact-list a:hover{color:var(--accent);border-color:var(--accent)}
+  .contact-channels{display:flex;flex-direction:column;gap:14px;margin-top:8px}
+  .contact-channel{display:flex;align-items:center;gap:16px;padding:16px 20px;background:var(--bg-raised);border:1px solid var(--line);border-radius:var(--radius);transition:all 0.25s;text-decoration:none}
+  .contact-channel:hover{border-color:var(--accent);box-shadow:var(--shadow-glow);transform:translateX(4px)}
+  .contact-icon{width:44px;height:44px;border-radius:var(--radius-sm);background:var(--accent-soft);display:flex;align-items:center;justify-content:center;color:var(--accent);flex-shrink:0}
+  .contact-icon svg{width:20px;height:20px}
+  .contact-info{min-width:0}
+  .contact-label{font-family:var(--font-mono);font-size:0.72rem;text-transform:uppercase;letter-spacing:0.06em;color:var(--ink-muted);margin-bottom:3px}
+  .contact-value{font-size:0.95rem;font-weight:600;color:var(--ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
   @media(max-width:760px){.contact-grid{grid-template-columns:1fr;gap:40px}}
 
   footer{padding:32px 0 48px;background:var(--bg);border-top:1px solid var(--line)}
@@ -318,7 +322,7 @@
         <div class="section-num">01 — Profil</div>
         <h2>Mathématicien de formation,<br>data scientist par vocation</h2>
       </div>
-      <div class="section-note">À l'interface entre la rigueur de la modélisation statistique et l'IA générative appliquée.</div>
+      <div class="section-note">À l'interface entre la rigueur de la modélisation mathématique et l'IA appliquée.</div>
     </div>
     <div class="about-grid">
       <div class="about-text reveal">
@@ -416,7 +420,7 @@
         </div>
         <div class="project-body">
           <span class="project-tag tag-ia">IA Générative · Automation</span>
-          <h3>MatchCraft AI — Agent de candidature autonome</h3>
+          <h3>MatchCraft AI Agent de candidature autonome</h3>
           <p class="project-desc">
             Agent autonome qui scanne automatiquement le web à la recherche de stages et alternances en Data Science, Analytics, Machine Learning et AI Engineering. Pour chaque offre pertinente, il rédige une lettre de motivation personnalisée, ancrée dans le CV, le portfolio et les projets GitHub de l'utilisateur. Le système s'auto-évalue et se corrige si la lettre est jugée trop générique. Automatisation complète via GitHub Actions — pas besoin de garder un ordinateur allumé.
           </p>
@@ -448,7 +452,7 @@
             <div class="stat"><div class="stat-num">62%</div><div class="stat-desc">Rappel</div></div>
             <div class="stat"><div class="stat-num">−62%</div><div class="stat-desc">Pertes</div></div>
           </div>
-          <div class="project-links" style="margin-top:16px">
+          <div class="project-links" >
             <a href="https://github.com/Dave-kossi/bank-transaction-fraud-detection" target="_blank" rel="noopener">Code GitHub →</a>
           </div>
         </div>
@@ -469,7 +473,7 @@
             <div class="stat"><div class="stat-num">+35%</div><div class="stat-desc">Surprime max</div></div>
             <div class="stat"><div class="stat-num">−20%</div><div class="stat-desc">Bonus faible risque</div></div>
           </div>
-          <div class="project-links" style="margin-top:16px">
+          <div class="project-links" >
             <a href="https://predictive-analysis-g7zjxrbuf79tfb3aolobma.streamlit.app/" target="_blank" rel="noopener">Démo live →</a>
             <a href="https://github.com/Dave-kossi/healthcare-cost-analysis" target="_blank" rel="noopener">Code GitHub →</a>
           </div>
@@ -491,7 +495,7 @@
             <div class="stat"><div class="stat-num">763</div><div class="stat-desc">Chunks</div></div>
             <div class="stat"><div class="stat-num">5</div><div class="stat-desc">Bugs corrigés</div></div>
           </div>
-          <div class="project-links" style="margin-top:16px">
+          <div class="project-links" >
             <a href="https://github.com/Dave-kossi/VentiRE-RAG" target="_blank" rel="noopener">Code GitHub →</a>
           </div>
         </div>
@@ -504,14 +508,14 @@
         </div>
         <div class="project-body">
           <span class="project-tag tag-energy">Énergie · Prospective</span>
-          <h3>Europa Énergie — Intelligence décisionnelle</h3>
+          <h3>Europa Énergie Intelligence décisionnelle</h3>
           <p class="project-desc">Analyse de la transition énergétique en Europe : clustering K-Means/hiérarchique des pays (intensité carbone, part EnR, dépendance fossile), projections à horizon 2050 avec calcul du TCAC pour le solaire et l'éolien.</p>
           <div class="project-stack"><span>Python</span><span>Plotly</span><span>Streamlit</span><span>SciPy</span><span>Clustering</span></div>
           <div class="project-stats">
             <div class="stat"><div class="stat-num">95%</div><div class="stat-desc">Intervalle confiance</div></div>
             <div class="stat"><div class="stat-num">2050</div><div class="stat-desc">Horizon simulation</div></div>
           </div>
-          <div class="project-links" style="margin-top:16px">
+          <div class="project-links" >
             <a href="https://euenergyconsomption-dmjfgddsphmd4ydjqlscgk.streamlit.app/" target="_blank" rel="noopener">Démo live →</a>
             <a href="https://github.com/Dave-kossi/EU_energy_consomption" target="_blank" rel="noopener">Code GitHub →</a>
           </div>
@@ -532,7 +536,7 @@
             <div class="stat"><div class="stat-num">RUL</div><div class="stat-desc">Durée résiduelle</div></div>
             <div class="stat"><div class="stat-num">K-M</div><div class="stat-desc">Kaplan–Meier</div></div>
           </div>
-          <div class="project-links" style="margin-top:16px">
+          <div class="project-links" >
             <a href="https://github.com/Dave-kossi/Predictive-Maintenance-in-industry" target="_blank" rel="noopener">Code GitHub →</a>
             <a href="https://predictive-maintenance-in-industry-ci7wzatf9nlcghomctgbtx.streamlit.app/" target="_blank" rel="noopener">Démo live →</a>
           </div>
@@ -546,14 +550,14 @@
         </div>
         <div class="project-body">
           <span class="project-tag tag-data">Data Engineering · Temps réel</span>
-          <h3>VeloTrack Mulhouse — Collecte de données temps réel</h3>
+          <h3>VeloTrack Mulhouse Collecte de données temps réel</h3>
           <p class="project-desc">Collecteur automatique de données pour le réseau Vélostation de l'agglomération mulhousienne : capture en temps réel de l'état de toutes les stations via l'API GBFS de Nextbike, score de tension par station, archivage horodaté pour jeu de données ML.</p>
           <div class="project-stack"><span>Python</span><span>Streamlit</span><span>API GBFS</span><span>Pandas</span><span>Time Series</span></div>
           <div class="project-stats">
             <div class="stat"><div class="stat-num">100%</div><div class="stat-desc">Stations couvertes</div></div>
             <div class="stat"><div class="stat-num">3</div><div class="stat-desc">Niveaux tension</div></div>
           </div>
-          <div class="project-links" style="margin-top:16px">
+          <div class="project-links" >
             <a href="https://biketrack-jq9uepdtfbywzdccc5tvim.streamlit.app/" target="_blank" rel="noopener">Démo live →</a>
             <a href="https://github.com/Dave-kossi/Bike_Track" target="_blank" rel="noopener">Code GitHub →</a>
           </div>
@@ -567,7 +571,7 @@
         </div>
         <div class="project-body">
           <span class="project-tag tag-ia">IA Générative · Data Quality</span>
-          <h3>Axiom — Data Quality & Audit intelligent</h3>
+          <h3>Axiom  Data Quality & Audit intelligent</h3>
           <p class="project-desc">Application Web de qualité de données combinant un pipeline de nettoyage automatisé et un assistant IA contextuel. Détection automatique du domaine métier, profiling dynamique avant/après, optimisation mémoire par downcasting. Assistant Llama 3 adaptatif dont le comportement change selon la nature des données.</p>
           <div class="project-stack"><span>Python</span><span>Streamlit</span><span>Pandas</span><span>ydata-profiling</span><span>OpenRouter API</span><span>Llama 3.2</span></div>
           <div class="project-stats">
@@ -575,7 +579,7 @@
             <div class="stat"><div class="stat-num">7</div><div class="stat-desc">Étapes pipeline</div></div>
             <div class="stat"><div class="stat-num">3</div><div class="stat-desc">Profils IA</div></div>
           </div>
-          <div class="project-links" style="margin-top:16px">
+          <div class="project-links" >
             <a href="https://github.com/Dave-kossi/Data-Quality-Audit-and-Cleaning-Pipeline-App" target="_blank" rel="noopener">Code GitHub →</a>
             <a href="https://data-quality-audit-and-cleaning-pipeline-btijscehnpfxa8grjj2ui.streamlit.app/" target="_blank" rel="noopener">Démo live →</a>
           </div>
@@ -596,7 +600,7 @@
             <div class="stat"><div class="stat-num">0.061</div><div class="stat-desc">Erreur L2</div></div>
             <div class="stat"><div class="stat-num">−42%</div><div class="stat-desc">Réduction erreur</div></div>
           </div>
-          <div class="project-links" style="margin-top:16px">
+          <div class="project-links" >
             <a href="https://github.com/Dave-kossi/PINNs-for-chaotic-system" target="_blank" rel="noopener">Code GitHub →</a>
           </div>
         </div>
@@ -651,15 +655,15 @@
         <ul class="edu-list">
           <li>
             <div class="edu-degree">Master 2 Ingénierie Mathématique & Data Science</div>
-            <div class="edu-school">Université de Haute-Alsace (UHA) — 2026 / 2027</div>
+            <div class="edu-school">Université de Haute-Alsace (UHA) 2026 / 2027</div>
           </li>
           <li>
             <div class="edu-degree">Licence Mathématiques Appliquées</div>
-            <div class="edu-school">Université de Haute-Alsace (UHA) — 2024 / 2025</div>
+            <div class="edu-school">Université de Haute-Alsace (UHA) 2024 / 2025</div>
           </li>
           <li>
             <div class="edu-degree">Licence Fondamentale de Mathématiques</div>
-            <div class="edu-school">Université de Lomé — 2019 / 2023</div>
+            <div class="edu-school">Université de Lomé 2019 / 2023</div>
           </li>
         </ul>
       </div>
@@ -696,12 +700,44 @@
         Disponible pour un stage <em>Data Scientist / ML Engineer</em> à partir de mars 2027,
         dans les secteurs Finance, Industrie, Énergie ou IA appliquée.
       </div>
-      <ul class="contact-list reveal stagger-1">
-        <li><a href="mailto:noumagnokossi0@gmail.com">noumagnokossi0@gmail.com</a></li>
-        <li><a href="tel:+33745974382">+33 7 45 97 43 82</a></li>
-        <li><a href="https://www.linkedin.com/in/kossi-noumagno" target="_blank" rel="noopener">LinkedIn — in/kossi-noumagno</a></li>
-        <li><a href="https://github.com/Dave-kossi" target="_blank" rel="noopener">GitHub — Dave-kossi</a></li>
-      </ul>
+      <div class="contact-channels reveal stagger-1">
+        <a href="mailto:noumagnokossi0@gmail.com" class="contact-channel">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <div class="contact-info">
+            <div class="contact-label">Email</div>
+            <div class="contact-value">noumagnokossi0@gmail.com</div>
+          </div>
+        </a>
+        <a href="tel:+33745974382" class="contact-channel">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </div>
+          <div class="contact-info">
+            <div class="contact-label">Téléphone</div>
+            <div class="contact-value">+33 7 45 97 43 82</div>
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/in/kossi-noumagno" target="_blank" rel="noopener" class="contact-channel">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </div>
+          <div class="contact-info">
+            <div class="contact-label">LinkedIn</div>
+            <div class="contact-value">kossi-noumagno</div>
+          </div>
+        </a>
+        <a href="https://github.com/Dave-kossi" target="_blank" rel="noopener" class="contact-channel">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          </div>
+          <div class="contact-info">
+            <div class="contact-label">GitHub</div>
+            <div class="contact-value">Dave-kossi</div>
+          </div>
+        </a>
+      </div>
     </div>
   </div>
 </section>
