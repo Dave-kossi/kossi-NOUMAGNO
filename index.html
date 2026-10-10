@@ -1,851 +1,245 @@
 <!DOCTYPE html>
-<html lang="fr">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kossi Noumagno — Data Scientist | Mathematical Modeling & Scientific ML</title>
-<meta name="description" content="Portfolio de Kossi Noumagno — M2 Ingénierie Mathématique & Data Science. Mathematical Modeling, Scientific ML, Machine Learning, RAG/LLM, Data Quality et analyse de données.">
-<meta name="keywords" content="Kossi Noumagno, Data Scientist, Mathematical Modeling, Scientific ML, Machine Learning, RAG, LLM, PINNs, Data Science, UHA">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#101522">
+<meta name="description" content="Portfolio de Kossi Noumagno, Data Scientist & ML Engineer : Machine Learning, Deep Learning, vision, RAG/LLM et modélisation mathématique. Stage R&D de 6 mois à partir de mars 2027.">
+<title>Kossi Noumagno — Data Scientist & ML Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{
-  --bg:#fff;
-  --surface:#f6f7f9;
-  --ink:#0d1117;
-  --muted:#59616d;
-  --soft:#89919d;
-  --line:#e2e5e9;
-  --blue:#2451e0;
-  --blue-soft:#edf1ff;
-  --violet:#6b4cc4;
-  --violet-soft:#f1edfb;
-  --dark:#0b0e13;
-  --dark-line:rgba(255,255,255,.12);
-  --display:'Space Grotesk',sans-serif;
-  --body:'Inter',sans-serif;
-  --mono:'IBM Plex Mono',monospace;
-  --max:1120px;
-}
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{
-  background:var(--bg);color:var(--ink);font-family:var(--body);
-  line-height:1.65;-webkit-font-smoothing:antialiased;
-}
-a{color:inherit;text-decoration:none}
-button{font:inherit}
-.wrap{max-width:var(--max);margin:auto;padding:0 28px}
-:focus-visible{outline:2px solid var(--blue);outline-offset:3px}
-
-/* NAV */
-header{
-  position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);
-  backdrop-filter:blur(10px);border-bottom:1px solid var(--line)
-}
-nav{
-  max-width:var(--max);margin:auto;padding:16px 28px;
-  display:flex;align-items:center;justify-content:space-between;gap:20px
-}
-.logo{font-family:var(--mono);font-weight:600;font-size:.92rem}
-.logo span{color:var(--blue)}
-.navlinks{display:flex;gap:27px;font-size:.84rem;color:var(--muted)}
-.navlinks a:hover{color:var(--blue)}
-.nav-cta{
-  font-family:var(--mono);font-size:.76rem;border:1px solid var(--ink);
-  padding:8px 13px;border-radius:3px
-}
-.nav-cta:hover{background:var(--ink);color:white}
-@media(max-width:760px){
-  .navlinks{display:none}
-  nav{padding:14px 20px}
-}
-
-/* HERO */
-.hero{padding:76px 0 0;border-bottom:1px solid var(--line)}
-.hero-grid{
-  display:grid;grid-template-columns:1.45fr .55fr;gap:64px;
-  align-items:center;padding-bottom:62px
-}
-.eyebrow{
-  display:inline-flex;align-items:center;gap:8px;padding:6px 10px;
-  border:1px solid #dce4ff;background:var(--blue-soft);color:var(--blue);
-  border-radius:3px;font:500 .72rem var(--mono);margin-bottom:22px
-}
-.eyebrow:before{
-  content:"";width:6px;height:6px;border-radius:50%;background:var(--blue)
-}
-h1{
-  font:600 clamp(2.5rem,5vw,4.25rem)/1.06 var(--display);
-  letter-spacing:-.045em;max-width:780px
-}
-h1 em{font-style:normal;color:var(--blue)}
-.hero-sub{
-  margin-top:24px;max-width:700px;color:var(--muted);
-  font-size:1.06rem;line-height:1.75
-}
-.hero-sub strong{color:var(--ink)}
-.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
-.btn{
-  display:inline-flex;align-items:center;gap:8px;padding:12px 18px;
-  border-radius:3px;font:500 .76rem var(--mono);transition:.18s
-}
-.btn-primary{background:var(--ink);color:white}
-.btn-primary:hover{background:var(--blue)}
-.btn-ghost{border:1px solid var(--line)}
-.btn-ghost:hover{border-color:var(--blue);color:var(--blue)}
-.hero-card{
-  aspect-ratio:4/5;background:var(--surface);border:1px solid var(--line);
-  overflow:hidden;position:relative
-}
-.hero-card img{width:100%;height:100%;object-fit:cover}
-.hero-card .placeholder{
-  position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
-  font:500 .72rem var(--mono);color:var(--soft)
-}
-.hero-meta{
-  margin-top:25px;display:flex;flex-wrap:wrap;gap:9px
-}
-.meta{
-  padding:6px 9px;background:var(--surface);border:1px solid var(--line);
-  font:500 .68rem var(--mono);color:var(--muted)
-}
-@media(max-width:820px){
-  .hero{padding-top:48px}
-  .hero-grid{grid-template-columns:1fr;gap:32px}
-  .hero-card{max-width:250px}
-}
-
-/* TICKER */
-.ticker{background:var(--dark);color:white;overflow:hidden}
-.ticker-track{display:flex;width:max-content;animation:scroll 42s linear infinite}
-@keyframes scroll{to{transform:translateX(-50%)}}
-.ticker-item{
-  display:flex;gap:10px;align-items:baseline;white-space:nowrap;
-  padding:17px 32px;border-right:1px solid var(--dark-line)
-}
-.ticker-num{font:600 1rem var(--mono);color:#8aa4ff}
-.ticker-label{font-size:.74rem;color:rgba(255,255,255,.62)}
-@media(prefers-reduced-motion:reduce){.ticker-track{animation:none}}
-
-/* SECTIONS */
-section{padding:82px 0}
-.section-head{
-  display:flex;justify-content:space-between;align-items:end;gap:30px;
-  border-bottom:1px solid var(--line);padding-bottom:18px;margin-bottom:44px
-}
-.section-kicker{font:500 .7rem var(--mono);color:var(--soft);margin-bottom:5px}
-h2{font:600 clamp(1.7rem,3vw,2.25rem)/1.15 var(--display);letter-spacing:-.025em}
-.section-note{max-width:330px;text-align:right;color:var(--soft);font-size:.82rem}
-@media(max-width:700px){
-  .section-head{display:block}
-  .section-note{text-align:left;margin-top:10px}
-}
-
-/* ABOUT */
-.about-grid{display:grid;grid-template-columns:1.4fr .8fr;gap:70px}
-.about-copy p{max-width:700px;color:var(--muted);font-size:.98rem;margin-bottom:17px}
-.about-copy strong{color:var(--ink)}
-.focus-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.focus{
-  padding:15px;background:var(--surface);border:1px solid var(--line)
-}
-.focus h3{font:600 .75rem var(--mono);color:var(--blue);margin-bottom:7px}
-.focus p{font-size:.78rem;color:var(--muted);line-height:1.5}
-@media(max-width:800px){.about-grid{grid-template-columns:1fr;gap:35px}}
-
-/* PROJECTS */
-.projects{background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.project{
-  display:grid;grid-template-columns:70px minmax(0,1fr) 250px;
-  gap:28px;padding:34px 0;border-bottom:1px solid var(--line)
-}
-.project:first-of-type{border-top:1px solid var(--line)}
-.project-index{font:500 .72rem var(--mono);color:var(--soft)}
-.project-tag{
-  display:inline-block;font:500 .66rem var(--mono);text-transform:uppercase;
-  letter-spacing:.04em;color:var(--blue);background:var(--blue-soft);
-  padding:5px 8px;margin-bottom:11px;border-radius:2px
-}
-.project-tag.violet{color:var(--violet);background:var(--violet-soft)}
-.project h3{font:600 1.3rem/1.2 var(--display);margin-bottom:10px;letter-spacing:-.015em}
-.project-desc{color:var(--muted);font-size:.88rem;line-height:1.65;margin-bottom:13px}
-.stack{font:500 .68rem/1.7 var(--mono);color:var(--soft)}
-.links{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
-.links a{
-  font:500 .68rem var(--mono);border:1px solid var(--line);
-  padding:7px 10px;background:white
-}
-.links a:hover{border-color:var(--blue);color:var(--blue)}
-.metrics{display:flex;flex-direction:column;gap:8px}
-.metric{background:white;border:1px solid var(--line);padding:11px 12px;border-left:2px solid var(--blue)}
-.metric.violet{border-left-color:var(--violet)}
-.metric .num{display:block;font:600 1rem var(--mono);margin-bottom:3px}
-.metric .label{font-size:.7rem;color:var(--muted);line-height:1.4}
-.project-bottom{grid-column:2/4;margin-top:4px;padding:13px 15px;background:white;border-left:2px solid var(--blue)}
-.project-bottom.violet{border-left-color:var(--violet)}
-.project-bottom span{font:500 .65rem var(--mono);text-transform:uppercase;color:var(--blue)}
-.project-bottom.violet span{color:var(--violet)}
-.project-bottom p{font-size:.78rem;color:var(--muted);margin-top:3px}
-@media(max-width:850px){
-  .project{grid-template-columns:45px 1fr}
-  .metrics{grid-column:2}
-  .project-bottom{grid-column:2}
-}
-@media(max-width:600px){
-  .project{display:block}
-  .project-index{margin-bottom:12px}
-  .metrics{margin-top:20px}
-  .project-bottom{margin-top:16px}
-}
-
-/* EXPERIENCE */
-.timeline-item{
-  display:grid;grid-template-columns:165px 1fr;gap:35px;
-  padding:28px 0;border-bottom:1px solid var(--line)
-}
-.timeline-item:first-child{border-top:1px solid var(--line)}
-.date{font:500 .72rem var(--mono);color:var(--soft)}
-.role{font-weight:600;font-size:1rem}
-.org{color:var(--blue);font-size:.82rem;margin:2px 0 11px}
-.points{list-style:none}
-.points li{
-  position:relative;padding-left:15px;color:var(--muted);
-  font-size:.86rem;margin-bottom:6px
-}
-.points li:before{content:"•";position:absolute;left:0;color:var(--blue)}
-@media(max-width:700px){.timeline-item{grid-template-columns:1fr;gap:7px}}
-
-/* SKILLS */
-.skills{background:var(--surface);border-top:1px solid var(--line)}
-.skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-.skill-card{background:white;border:1px solid var(--line);padding:20px}
-.skill-card h3{font:600 .72rem var(--mono);text-transform:uppercase;color:var(--blue);margin-bottom:12px}
-.skill-card p{font-size:.82rem;color:var(--muted);line-height:1.75}
-@media(max-width:800px){.skills-grid{grid-template-columns:1fr 1fr}}
-@media(max-width:520px){.skills-grid{grid-template-columns:1fr}}
-
-/* EDUCATION */
-.edu-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px}
-.edu-item{padding:17px 0;border-bottom:1px solid var(--line)}
-.edu-degree{font-weight:600;font-size:.9rem}
-.edu-school{font:500 .7rem var(--mono);color:var(--soft);margin-top:3px}
-.tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:13px}
-.tag{font:500 .67rem var(--mono);color:var(--muted);border:1px solid var(--line);padding:6px 9px}
-@media(max-width:700px){.edu-grid{grid-template-columns:1fr;gap:35px}}
-
-/* CONTACT */
-.contact{background:var(--dark);color:white}
-.contact .section-head{border-color:var(--dark-line)}
-.contact .section-kicker{color:rgba(255,255,255,.45)}
-.contact h2{color:white}
-.contact-grid{display:grid;grid-template-columns:1.5fr 1fr;gap:60px;align-items:end}
-.contact-lead{font:500 clamp(1.5rem,3vw,2.15rem)/1.3 var(--display)}
-.contact-lead em{font-style:normal;color:#8aa4ff}
-.contact-list{list-style:none}
-.contact-list li{margin:10px 0}
-.contact-list a{font:500 .78rem var(--mono);color:white;border-bottom:1px solid rgba(255,255,255,.25);padding-bottom:3px}
-.contact-list a:hover{color:#8aa4ff;border-color:#8aa4ff}
-@media(max-width:700px){.contact-grid{grid-template-columns:1fr;gap:30px}}
-
-footer{background:var(--dark);border-top:1px solid var(--dark-line);color:rgba(255,255,255,.42);padding:24px 0;font:500 .67rem var(--mono)}
-footer .wrap{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
-
-/* REVEAL */
-.reveal{opacity:0;transform:translateY(12px);transition:opacity .55s ease,transform .55s ease}
-.reveal.visible{opacity:1;transform:none}
-@media(prefers-reduced-motion:reduce){
-  .reveal{opacity:1;transform:none}
-}
-</style>
-</head>
-
-<body>
-
-<header>
-<nav>
-  <a class="logo" href="#top">Kossi <span>Noumagno</span></a>
-  <div class="navlinks">
-    <a href="#about">Profil</a>
-    <a href="#projects">Projets</a>
-    <a href="#experience">Expérience</a>
-    <a href="#skills">Compétences</a>
-    <a href="#education">Formation</a>
-  </div>
-  <a class="nav-cta" href="#contact">Me contacter</a>
-</nav>
-</header>
-
-<main id="top">
-
-<!-- HERO -->
-<section class="hero">
-<div class="wrap hero-grid">
-  <div class="reveal">
-    <div class="eyebrow">R&amp;D Internship — March 2027</div>
-    <h1>Data Science à l'interface entre <em>mathématiques, modèles</em> et systèmes réels.</h1>
-    <p class="hero-sub">
-      Étudiant en <strong>Master 2 Ingénierie Mathématique &amp; Data Science</strong> à l'Université de Haute-Alsace.
-      Je travaille sur la <strong>modélisation mathématique, le Scientific ML, le Machine Learning et l'IA générative</strong>,
-      avec une attention particulière portée à la qualité des données, à l'évaluation des modèles et à leur application
-      à des problématiques concrètes.
-    </p>
-    <div class="actions">
-      <a class="btn btn-primary" href="#projects">Explorer mes projets →</a>
-      <a class="btn btn-ghost" href="mailto:noumagnokossi0@gmail.com">Me contacter</a>
-      <a class="btn btn-ghost" href="https://github.com/Dave-kossi" target="_blank" rel="noopener">GitHub ↗</a>
-    </div>
-    <div class="hero-meta">
-      <span class="meta">Mathematical Modeling</span>
-      <span class="meta">Scientific ML</span>
-      <span class="meta">Machine Learning</span>
-      <span class="meta">RAG / LLM</span>
-      <span class="meta">Data Quality</span>
-    </div>
-  </div>
-
-  <div class="hero-card reveal">
-    <img src="photo.jpg" alt="Kossi Noumagno" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-    <div class="placeholder" style="display:none">photo.jpg</div>
-  </div>
+:root{--bg:#f6f7fb;--ink:#171b2a;--muted:#667085;--line:#e5e8f0;--navy:#101522;--blue:#5368f5;--bd:#3548d9;--violet:#8465ee;--max:1160px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:88px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"DM Sans",sans-serif;line-height:1.65}
+a{color:inherit;text-decoration:none}a:focus-visible,button:focus-visible{outline:3px solid var(--violet);outline-offset:3px}
+.wrap{width:min(var(--max),calc(100% - 40px));margin:auto}
+.eyebrow{color:var(--blue);font:500 12px "DM Mono",monospace;text-transform:uppercase;letter-spacing:.13em}
+h1,h2,h3{font-family:"Space Grotesk",sans-serif;line-height:1.12;letter-spacing:-.035em}
+h1{font-size:clamp(40px,6vw,72px);margin:18px 0 20px;max-width:900px}h2{font-size:clamp(30px,4vw,44px);margin:10px 0 14px}h3{font-size:21px;margin:0 0 10px}p{margin:0 0 16px}.muted{color:var(--muted)}
+.topbar{position:sticky;top:0;z-index:50;background:rgba(246,247,251,.9);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+.nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{font:700 17px "Space Grotesk",sans-serif}.brand span{color:var(--blue)}
+.navlinks{display:flex;gap:22px;align-items:center;font-size:13px;color:#4c5365}.navlinks a:hover{color:var(--bd)}
+.nav-cta,.button{display:inline-flex;align-items:center;justify-content:center;border-radius:999px;font-weight:700;transition:transform .2s}
+.nav-cta{padding:10px 16px;background:var(--navy);color:#fff;font-size:13px}
+.button{padding:13px 19px;font-size:14px;border:1px solid var(--line);background:#fff}.button.primary{background:var(--blue);color:#fff;border-color:var(--blue)}
+.button:hover,.nav-cta:hover{transform:translateY(-2px)}
+.hero{padding:80px 0 50px;position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;width:500px;height:500px;right:-120px;top:-200px;border-radius:50%;background:radial-gradient(circle,rgba(132,101,238,.16),transparent 68%);pointer-events:none}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(250px,.65fr);gap:46px;align-items:center;position:relative}
+.avail{display:inline-flex;align-items:center;gap:9px;border:1px solid #d9e4dc;background:#effaf4;color:#216a47;border-radius:999px;padding:8px 12px;font:500 11px "DM Mono",monospace;text-transform:uppercase}
+.dot{width:7px;height:7px;background:#28a66b;border-radius:50%}
+.accent{color:var(--blue)}.hero-copy{font-size:18px;color:#5f6678;max-width:700px}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:27px}
+.hero-meta{display:flex;flex-wrap:wrap;gap:18px;margin-top:26px;color:#6b7284;font-size:12px}
+.pcard{background:var(--navy);color:#fff;border-radius:28px;padding:26px;box-shadow:0 24px 65px rgba(16,21,34,.17)}
+.pmark{width:68px;height:68px;display:grid;place-items:center;border-radius:20px;background:linear-gradient(135deg,#6578ff,#9d73f3);font:700 23px "Space Grotesk",sans-serif;margin-bottom:22px}
+.pcard h3{font-size:24px}.pcard p{color:#b8c0d2;font-size:13px}
+.pl{height:1px;background:rgba(255,255,255,.13);margin:20px 0}
+.pd{display:flex;justify-content:space-between;gap:14px;font-size:12px;margin:12px 0}.pd span:first-child{color:#929bb0}.pd span:last-child{text-align:right}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:44px;position:relative}
+.stat{background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px}
+.stat b{display:block;font:700 26px "Space Grotesk",sans-serif;color:var(--bd)}.stat span{font-size:12px;color:var(--muted)}
+.section{padding:76px 0}
+.sh{display:flex;align-items:end;justify-content:space-between;gap:30px;margin-bottom:30px}.sh p{max-width:500px;color:var(--muted);margin-bottom:4px}
+.intro{display:grid;grid-template-columns:1.1fr .9fr;gap:24px}
+.panel{background:#fff;border:1px solid var(--line);border-radius:22px;padding:28px}.panel p:last-child{margin-bottom:0}
+.pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}.pill{border:1px solid var(--line);background:#fafbfe;padding:7px 10px;border-radius:999px;font-size:12px;color:#525a6c}
+.pr{display:grid;gap:17px}.pri{display:flex;gap:14px}
+.pi{width:38px;height:38px;flex:0 0 38px;display:grid;place-items:center;border-radius:12px;background:#eef0ff;color:var(--blue);font-weight:700}
+.pri strong{display:block;font-size:14px}.pri p{font-size:13px;color:var(--muted);margin:0}
+.psec{background:#eef0f6}
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
+.filter{border:1px solid #dfe3ed;color:#60687b;background:rgba(255,255,255,.7);border-radius:999px;padding:9px 14px;cursor:pointer;font:500 12px "DM Sans",sans-serif}
+.filter.active,.filter:hover{background:var(--navy);color:#fff;border-color:var(--navy)}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.project{background:#fff;border:1px solid #e2e5ee;border-radius:22px;display:flex;flex-direction:column;min-width:0;transition:transform .2s,box-shadow .2s}
+.project:hover{transform:translateY(-4px);box-shadow:0 16px 44px rgba(25,32,58,.07)}
+.project.top{border-color:#c9ceff}.project[hidden]{display:none}
+.pt{padding:22px 23px 0;display:flex;justify-content:space-between;gap:12px;align-items:start}
+.pn{font:500 11px "DM Mono",monospace;color:#8990a1}
+.ptype{font:500 10px "DM Mono",monospace;text-transform:uppercase;color:var(--bd);background:#eff0ff;border-radius:999px;padding:6px 9px}
+.pb{padding:14px 23px 22px;flex:1;display:flex;flex-direction:column}
+.project h3{font-size:22px}.project p{color:#646b7d;font-size:13px}
+.m{color:var(--ink)!important;font-weight:700}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:4px 0 18px}.tags span{font-size:10px;border-radius:6px;background:#f2f4f8;color:#61697a;padding:5px 7px}
+.pl2{display:flex;gap:15px;flex-wrap:wrap;margin-top:auto;font-size:12px;font-weight:700}.pl2 a{color:var(--bd)}.pl2 a:hover{text-decoration:underline}
+.status{display:inline-block;color:#95621a;background:#fff6e4;padding:5px 8px;border-radius:7px;font:500 10px "DM Mono",monospace;margin-bottom:12px;align-self:flex-start}
+.egrid{display:grid;grid-template-columns:.72fr 1.28fr;gap:36px}.aside{position:sticky;top:105px;align-self:start}
+.timeline{border-left:1px solid #d9deea;padding-left:26px}
+.ti{position:relative;padding:0 0 32px}.ti:last-child{padding-bottom:0}
+.ti:before{content:"";width:9px;height:9px;border:3px solid var(--bg);background:var(--blue);border-radius:50%;position:absolute;left:-32px;top:5px;box-shadow:0 0 0 1px #b9c1f7}
+.date{color:var(--bd);font:500 11px "DM Mono",monospace;margin-bottom:7px}
+.ti h3{font-size:19px;margin-bottom:5px}.org{color:#7a8191;font-size:12px;margin-bottom:10px}
+.ti ul{color:#5f6678;padding-left:18px;margin:0;font-size:13px}.ti li{margin:5px 0}
+.skills{background:var(--navy);color:#fff}.skills .eyebrow{color:#a6afff}.skills .sh p{color:#b0b7c8}
+.sg{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.sc{border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.045);border-radius:18px;padding:22px}
+.sc h3{font-size:17px;margin-bottom:13px}.sc p{color:#b8c0d1;font-size:12px;line-height:1.9;margin:0}
+.eg{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.edu{padding:22px;background:#fff;border:1px solid var(--line);border-radius:18px}.edu.f{border-color:#c9ceff}
+.edu h3{font-size:18px;margin-bottom:5px}.school{color:var(--muted);font-size:13px;margin-bottom:9px}.edu p{font-size:12px;color:#687083;margin:0}
+.extra{margin-top:14px}.extra .pills{margin-top:10px}
+.contact{padding:78px 0}
+.cc{background:linear-gradient(125deg,#151b2c,#222b49);color:#fff;border-radius:28px;padding:clamp(28px,5vw,54px);display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:center}
+.cc p{color:#c0c7d7;max-width:520px}.cc .eyebrow{color:#a6afff}
+.cl{display:grid;gap:10px}.clk{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:14px 16px;border-radius:13px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);font-size:12px}
+.clk span{color:#aeb7ca}.clk:hover{background:rgba(255,255,255,.13)}
+footer{border-top:1px solid var(--line);padding:22px 0 30px;color:#7b8291;font-size:11px}.fr{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
+@media(max-width:900px){.navlinks a:not(.nav-cta){display:none}.hero-grid,.intro,.egrid,.cc{grid-template-columns:1fr}.pcard{max-width:500px}.aside{position:static}.sg{grid-template-columns:1fr 1fr}.stats{grid-template-columns:1fr 1fr}}
+@media(max-width:620px){.hero{padding-top:52px}.section{padding:55px 0}.sh{display:block}.grid,.sg,.eg{grid-template-columns:1fr}.clk{flex-direction:column;align-items:flex-start;gap:3px;overflow-wrap:anywhere}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+</style></head><body>
+<header class="topbar"><div class="wrap nav"><a class="brand" href="#accueil">KN<span>.</span></a>
+<nav class="navlinks" aria-label="Navigation principale"><a href="#profil">Profil</a><a href="#projets">Projets</a><a href="#experience">Expérience</a><a href="#competences">Compétences</a><a href="#formation">Formation</a><a class="nav-cta" href="#contact">Me contacter ↗</a></nav></div></header>
+<main>
+<section class="hero" id="accueil"><div class="wrap">
+<div class="hero-grid"><div>
+<div class="avail"><span class="dot"></span> Stage R&amp;D · Mars 2027 · 6 mois</div>
+<p class="eyebrow" style="margin-top:24px">Portfolio · Data Science &amp; ML Engineering</p>
+<h1>Kossi Noumagno<span class="accent">.</span><br><span class="accent">Data Scientist &amp; ML Engineer</span></h1>
+<p class="hero-copy">Je modélise, entraîne et évalue des modèles de Machine Learning, de vision et d'IA générative, puis je les transforme en applications utilisables. Mon socle : mathématiques, physique, et deux ans d'exploitation de systèmes informatiques réels.</p>
+<div class="actions"><a class="button primary" href="#projets">Explorer mes projets ↘</a><a class="button" href="mailto:noumagnokossi0@gmail.com">Échanger avec moi ↗</a></div>
+<div class="hero-meta"><span>⌖ Mulhouse, France</span><span>▦ Master 2 IMDS · UHA</span><span>↗ <a href="https://github.com/Dave-kossi" target="_blank" rel="noopener noreferrer">GitHub</a></span></div>
 </div>
+<aside class="pcard" aria-label="Résumé du profil"><div class="pmark">KN</div><p class="eyebrow" style="color:#aab3ff">En quelques mots</p>
+<h3>Des mathématiques aux applications IA.</h3><p>À l'interface entre raisonnement mathématique, ingénierie logicielle et expérimentation de modèles.</p><div class="pl"></div>
+<div class="pd"><span>Formation</span><span>Master 2 IMDS · UHA</span></div><div class="pd"><span>Recherche</span><span>Stage de 6 mois</span></div><div class="pd"><span>Disponibilité</span><span>Mars 2027</span></div><div class="pd"><span>Domaines</span><span>Énergie · Industrie · Finance</span></div></aside></div>
+<div class="stats"><div class="stat"><b>0,0609</b><span>erreur relative L2 des PINNs avec Fourier Features (0,1052 sans)</span></div><div class="stat"><b>0,764</b><span>F1-score LightGBM, 50 000 transactions (précision 0,997, rappel 0,620)</span></div><div class="stat"><b>&gt;80 / &gt;90 %</b><span>recall / precision RAGAS du RAG VentiRE</span></div><div class="stat"><b>~90 %</b><span>d'erreurs de saisie en moins lors de mon bénévolat logistique</span></div></div>
+</div></section>
 
-<div class="ticker">
-  <div class="ticker-track">
-    <div class="ticker-item"><span class="ticker-num">0.0609</span><span class="ticker-label">erreur relative L2 — PINNs + Fourier Features</span></div>
-    <div class="ticker-item"><span class="ticker-num">0.764</span><span class="ticker-label">F1-score — détection de fraude</span></div>
-    <div class="ticker-item"><span class="ticker-num">0.997</span><span class="ticker-label">précision — modèle LightGBM fraude</span></div>
-    <div class="ticker-item"><span class="ticker-num">&gt;80%</span><span class="ticker-label">recall RAGAS — VentiRE</span></div>
-    <div class="ticker-item"><span class="ticker-num">&gt;90%</span><span class="ticker-label">precision RAGAS — VentiRE</span></div>
-    <div class="ticker-item"><span class="ticker-num">60</span><span class="ticker-label">stations suivies — VeloTrack Mulhouse</span></div>
-    <div class="ticker-item"><span class="ticker-num">90%</span><span class="ticker-label">réduction observée des erreurs de saisie — bénévolat</span></div>
+<section class="section" id="profil"><div class="wrap">
+<div class="sh"><div><p class="eyebrow">01 / Profil</p><h2>Comprendre le problème.<br>Construire la solution.</h2></div><p>Analyse du besoin, préparation des données, expérimentation, puis restitution sous forme d'outil.</p></div>
+<div class="intro">
+<article class="panel"><h3>Mon parcours</h3>
+<p>Licence fondamentale de mathématiques à Lomé (2019–2023), avec un socle en mathématiques, en physique (quantique, thermodynamique, électrodynamique, optique) et en informatique (C, Scilab). En parallèle puis après la licence, j'ai travaillé près de deux ans comme technicien informatique : réseaux, sauvegardes, serveurs, encadrement d'une équipe.</p>
+<p>Arrivé en France, j'ai orienté ce socle vers les mathématiques appliquées et la Data Science à l'Université de Haute-Alsace : optimisation, EDP, statistiques, signal, séries temporelles, Deep Learning, vision par ordinateur et calcul GPU.</p>
+<div class="pills"><span class="pill">Machine Learning</span><span class="pill">Deep Learning</span><span class="pill">Vision</span><span class="pill">LLM / RAG</span><span class="pill">Modélisation</span><span class="pill">Data Quality</span></div></article>
+<article class="panel"><h3>Ce que j'apporte</h3><div class="pr">
+<div class="pri"><div class="pi">DS</div><div><strong>Data Science rigoureuse</strong><p>Formuler le problème, choisir la bonne métrique, interpréter sans surinterpréter.</p></div></div>
+<div class="pri"><div class="pi">ML</div><div><strong>ML Engineering</strong><p>Pipelines reproductibles, déploiement Streamlit, automatisation GitHub Actions, GPU/CUDA.</p></div></div>
+<div class="pri"><div class="pi">∑</div><div><strong>Culture mathématique</strong><p>EDP, optimisation, Fourier : comprendre pourquoi un modèle marche ou échoue.</p></div></div>
+<div class="pri"><div class="pi">IT</div><div><strong>Culture systèmes</strong><p>Réseaux, serveurs, sauvegardes : une approche d'exploitation, au-delà du notebook.</p></div></div>
+</div></article></div></div></section>
 
-    <div class="ticker-item"><span class="ticker-num">0.0609</span><span class="ticker-label">erreur relative L2 — PINNs + Fourier Features</span></div>
-    <div class="ticker-item"><span class="ticker-num">0.764</span><span class="ticker-label">F1-score — détection de fraude</span></div>
-    <div class="ticker-item"><span class="ticker-num">0.997</span><span class="ticker-label">précision — modèle LightGBM fraude</span></div>
-    <div class="ticker-item"><span class="ticker-num">&gt;80%</span><span class="ticker-label">recall RAGAS — VentiRE</span></div>
-    <div class="ticker-item"><span class="ticker-num">&gt;90%</span><span class="ticker-label">precision RAGAS — VentiRE</span></div>
-    <div class="ticker-item"><span class="ticker-num">60</span><span class="ticker-label">stations suivies — VeloTrack Mulhouse</span></div>
-    <div class="ticker-item"><span class="ticker-num">90%</span><span class="ticker-label">réduction observée des erreurs de saisie — bénévolat</span></div>
-  </div>
+<section class="section psec" id="projets"><div class="wrap">
+<div class="sh"><div><p class="eyebrow">02 / Projets</p><h2>Du modèle au prototype.</h2></div><p>Les six premiers sont mes projets phares ; les suivants complètent le profil.</p></div>
+<div class="filters" role="group" aria-label="Filtrer les projets">
+<button class="filter active" type="button" data-filter="all">Tous</button><button class="filter" type="button" data-filter="ml">Machine Learning</button><button class="filter" type="button" data-filter="ai">IA &amp; LLM</button><button class="filter" type="button" data-filter="vision">Vision</button><button class="filter" type="button" data-filter="math">Modélisation</button><button class="filter" type="button" data-filter="data">Data &amp; BI</button></div>
+<div class="grid">
+
+<article class="project top" data-category="vision ml"><div class="pt"><span class="pn">01 · PHARE</span><span class="ptype">Énergie · Vision</span></div><div class="pb"><span class="status">Projet en cours</span>
+<h3>Détection d'anomalies sur panneaux solaires (drone)</h3>
+<p>Détection et caractérisation des défauts thermiques de panneaux photovoltaïques à partir d'images infrarouges de drone. L'image est traitée comme un champ de température T(x,y) : débruitage (gaussien, diffusion anisotrope, variation totale), détection par gradients, puis comparaison segmentation classique et ML/DL (Random Forest, SVM, autoencodeur, U-Net).</p>
+<p class="m">Chaque anomalie est quantifiée : localisation, surface, température relative, avec un indicateur de sévérité expérimental.</p>
+<p>Objectif : une application de détection automatique, avec un assistant IA qui détaille les anomalies en langage naturel.</p>
+<div class="tags"><span>Python</span><span>Traitement d'images</span><span>U-Net</span><span>Autoencodeur</span><span>Random Forest / SVM</span></div></div></article>
+
+<article class="project top" data-category="ai"><div class="pt"><span class="pn">02 · PHARE</span><span class="ptype">RAG · Réglementation</span></div><div class="pb">
+<h3>VentiRE — Assistant RAG réglementaire</h3>
+<p>Copilote local pour interroger la réglementation française sur la ventilation : recherche dense + BM25, fusion, reranking et génération par LLM local, avec refus de répondre hors du corpus et traçabilité des sources.</p>
+<p class="m">Évaluation RAGAS : recall &gt; 80 %, precision &gt; 90 %.</p>
+<div class="tags"><span>LlamaIndex</span><span>Ollama</span><span>Gemma 3</span><span>BM25</span><span>Cohere Rerank</span><span>Streamlit</span></div>
+<div class="pl2"><a href="https://github.com/Dave-kossi/VentiRE-RAG" target="_blank" rel="noopener noreferrer">Voir le code ↗</a></div></div></article>
+
+<article class="project top" data-category="math ml"><div class="pt"><span class="pn">03 · PHARE</span><span class="ptype">Scientific ML</span></div><div class="pb">
+<h3>PINNs pour le système de Lorenz</h3>
+<p>Réseaux de neurones informés par la physique pour approximer un système chaotique. Comparaison d'un réseau standard avec des Fourier Features, validée contre une solution RK45, avec observations partielles X/Y/Z.</p>
+<p class="m">Erreur relative L2 : 0,1052 → 0,0609 (−42 %) avec Fourier Features.</p>
+<div class="tags"><span>PyTorch</span><span>PINNs</span><span>Fourier Features</span><span>RK45</span><span>L-BFGS</span></div>
+<div class="pl2"><a href="https://github.com/Dave-kossi/PINNs-for-chaotic-system" target="_blank" rel="noopener noreferrer">Voir le code ↗</a></div></div></article>
+
+<article class="project top" data-category="ml"><div class="pt"><span class="pn">04 · PHARE</span><span class="ptype">Finance · Classification</span></div><div class="pb">
+<h3>Détection de fraude bancaire</h3>
+<p>Comparaison de modèles supervisés sur 50 000 transactions très déséquilibrées. L'accuracy seule étant trompeuse, l'évaluation porte sur le compromis précision / rappel.</p>
+<p class="m">LightGBM : F1 0,764 · précision 0,997 · rappel 0,620 · AUC 0,804.</p>
+<div class="tags"><span>Python</span><span>LightGBM</span><span>Scikit-learn</span><span>Données déséquilibrées</span></div>
+<div class="pl2"><a href="https://github.com/Dave-kossi/bank-transaction-fraud-detection" target="_blank" rel="noopener noreferrer">Voir le code ↗</a></div></div></article>
+
+<article class="project top" data-category="ml data"><div class="pt"><span class="pn">05 · PHARE</span><span class="ptype">Industrie · Fiabilité</span></div><div class="pb">
+<h3>Maintenance prédictive &amp; analyse de survie</h3>
+<p>Estimation de la durée de vie des équipements et de la durée de vie résiduelle (RUL) avec Kaplan–Meier, pour passer d'une maintenance corrective à une surveillance qui anticipe les défaillances. Tableau de bord interactif.</p>
+<div class="tags"><span>Lifelines</span><span>Kaplan–Meier</span><span>Plotly</span><span>Streamlit</span></div>
+<div class="pl2"><a href="https://predictive-maintenance-in-industry-ci7wzatf9nlcghomctgbtx.streamlit.app/" target="_blank" rel="noopener noreferrer">Voir la démo ↗</a><a href="https://github.com/Dave-kossi/Predictive-Maintenance-in-industry" target="_blank" rel="noopener noreferrer">Voir le code ↗</a></div></div></article>
+
+<article class="project top" data-category="ai"><div class="pt"><span class="pn">06 · PHARE</span><span class="ptype">ML Engineering · LLM</span></div><div class="pb">
+<h3>MatchCraft AI — Pipeline LLM multi-étapes</h3>
+<p>Veille d'offres et génération de lettres personnalisées. Le pipeline sépare extraction, rédaction et auto-critique avec régénération conditionnelle, et ancre la rédaction dans les documents réels du candidat. Le LLM intervient dans des étapes pilotées par du code déterministe.</p>
+<div class="tags"><span>Python</span><span>Groq</span><span>Streamlit</span><span>GitHub Actions</span></div>
+<div class="pl2"><a href="https://matchcraft-ai-njdxydjfqfzph6sbfdweru.streamlit.app/" target="_blank" rel="noopener noreferrer">Voir la démo ↗</a><a href="https://github.com/Dave-kossi/Job_Agent" target="_blank" rel="noopener noreferrer">Voir le code ↗</a></div></div></article>
+
+<article class="project" data-category="math ml"><div class="pt"><span class="pn">07</span><span class="ptype">GPU · Optimisation</span></div><div class="pb"><span class="status">Projet académique</span>
+<h3>PSO &amp; Differential Evolution sur GPU</h3>
+<p>Implémentation C++/CUDA massivement parallèle de PSO et DE, testée sur des fonctions benchmark (Rastrigin, Rosenbrock, Griewank, Sphere).</p>
+<div class="tags"><span>C++</span><span>CUDA</span><span>Optimisation</span></div></div></article>
+
+<article class="project" data-category="data ai"><div class="pt"><span class="pn">08</span><span class="ptype">Data Quality</span></div><div class="pb">
+<h3>Axiom — Audit et nettoyage de données</h3>
+<p>Profiling, détection d'anomalies et nettoyage, avec un assistant IA contextuel pour orienter les étapes de préparation.</p>
+<div class="tags"><span>Pandas</span><span>ydata-profiling</span><span>Streamlit</span><span>Llama 3.2</span></div>
+<div class="pl2"><a href="https://data-quality-audit-and-cleaning-pipeline-btijscehnpfxa8grjj2ui.streamlit.app/" target="_blank" rel="noopener noreferrer">Voir la démo ↗</a><a href="https://github.com/Dave-kossi/Data-Quality-Audit-and-Cleaning-Pipeline-App" target="_blank" rel="noopener noreferrer">Voir le code ↗</a></div></div></article>
+
+<article class="project" data-category="data"><div class="pt"><span class="pn">09</span><span class="ptype">Énergie · BI</span></div><div class="pb">
+<h3>Analyse du système électrique français</h3>
+<p>Dashboard sur la production, la consommation, les échanges, les émissions de CO₂ et les écarts entre prévisions et données observées (MAE / RMSE).</p>
+<div class="tags"><span>Pandas</span><span>Plotly</span><span>Streamlit</span><span>Données RTE</span></div></div></article>
+
+<article class="project" data-category="data"><div class="pt"><span class="pn">10</span><span class="ptype">Temps réel · Séries temporelles</span></div><div class="pb">
+<h3>VeloTrack — Vélostations de Mulhouse</h3>
+<p>Collecte horodatée de 60 stations via l'API GBFS, pour constituer un historique exploitable et préparer un modèle de prévision de disponibilité.</p>
+<div class="tags"><span>Python</span><span>API GBFS</span><span>Plotly</span><span>Streamlit</span></div>
+<div class="pl2"><a href="https://biketrack-jq9uepdtfbywzdccc5tvim.streamlit.app/" target="_blank" rel="noopener noreferrer">Voir la démo ↗</a><a href="https://github.com/Dave-kossi/Bike_Track" target="_blank" rel="noopener noreferrer">Voir le code ↗</a></div></div></article>
+</div></div></section>
+
+<section class="section" id="experience"><div class="wrap egrid">
+<div class="aside"><p class="eyebrow">03 / Expérience</p><h2>Données, systèmes &amp; terrain.</h2><p class="muted">Une expérience opérationnelle qui complète les projets : exploitation informatique, encadrement et travail sur des données réelles.</p></div>
+<div class="timeline">
+<article class="ti"><p class="date">Février 2026 – Septembre 2026</p><h3>Analyste des flux logistiques &amp; digitalisation (bénévolat)</h3><p class="org">Secours populaire français · Haut-Rhin, Mulhouse</p><ul>
+<li>Analyse des flux de distribution de kits alimentaires et d'hygiène pour familles et étudiants.</li>
+<li>Nettoyage et fiabilisation des données : valeurs aberrantes, valeurs manquantes, contrôles de cohérence, soit environ 90 % d'erreurs de saisie en moins avant l'enregistrement des commandes.</li>
+<li>Optimisation des commandes inter-antennes auprès de la Fédération du Haut-Rhin.</li>
+<li>Conception d'un outil de suivi (Streamlit, SQLite) avec scan des produits, en vue d'une exploitation BI et séries temporelles.</li></ul></article>
+<article class="ti"><p class="date">Septembre 2022 – Août 2024</p><h3>Technicien informatique</h3><p class="org">Computer Forever · Lomé, Togo</p><ul>
+<li>Supervision et résolution d'incidents réseaux en PME/PMI : infrastructures plus stables, temps d'arrêt réduits.</li>
+<li>Encadrement et formation de plus de 8 stagiaires techniciens : répartition des missions, supervision, transfert des procédures de diagnostic.</li>
+<li>Déploiement d'outils de sauvegarde automatisée pour protéger les données critiques.</li>
+<li>Programme de maintenance préventive et curative pour particuliers et professionnels.</li></ul></article>
+<article class="ti"><p class="date">Janvier 2023 – Août 2024</p><h3>Prestataire informatique indépendant</h3><p class="org">International Bâtisseur (agence immobilière) · Lomé, Togo</p><ul>
+<li>Configuration d'un serveur de fichiers Samba sur un serveur HP Xeon.</li><li>Suivi et maintenance continus du système informatique de l'agence.</li></ul></article>
+<article class="ti"><p class="date">Octobre 2021 – Août 2022</p><h3>Formation puis stage en maintenance et réseaux</h3><p class="org">Computer Forever · Lomé, Togo</p><ul>
+<li>Déploiement de Windows sur des centaines d'ordinateurs destinés à la vente : configuration, tests, mise en service.</li>
+<li>Installation et sécurisation de réseaux locaux, configuration de caméras de surveillance.</li></ul></article>
+</div></div></section>
+
+<section class="section skills" id="competences"><div class="wrap">
+<div class="sh"><div><p class="eyebrow">04 / Compétences</p><h2>Une boîte à outils transversale.</h2></div><p>Outils mobilisés dans mes projets académiques et personnels.</p></div>
+<div class="sg">
+<article class="sc"><h3>Machine Learning</h3><p>Scikit-learn · LightGBM · XGBoost · classification déséquilibrée · feature engineering · évaluation de modèles · séries temporelles</p></article>
+<article class="sc"><h3>Deep Learning &amp; vision</h3><p>PyTorch · TensorFlow · PINNs · U-Net · autoencodeurs · traitement d'images · segmentation</p></article>
+<article class="sc"><h3>Mathématiques &amp; calcul</h3><p>EDO/EDP · optimisation · analyse de Fourier · statistiques · analyse numérique · C++/CUDA</p></article>
+<article class="sc"><h3>LLM &amp; RAG</h3><p>LlamaIndex · Hugging Face · Ollama · embeddings · BM25 · reranking · évaluation RAGAS</p></article>
+<article class="sc"><h3>Données &amp; BI</h3><p>Python · R · SQL · NoSQL · Pandas · NumPy · Power BI · Plotly · Streamlit · Data Quality</p></article>
+<article class="sc"><h3>Ingénierie &amp; systèmes</h3><p>Git · GitHub Actions · Linux · réseaux locaux · Samba · sauvegardes automatisées</p></article>
+</div></div></section>
+
+<section class="section" id="formation"><div class="wrap">
+<div class="sh"><div><p class="eyebrow">05 / Formation</p><h2>Des fondations mathématiques à la Data Science.</h2></div><p>Mathématiques, physique, informatique et méthodes numériques.</p></div>
+<div class="eg">
+<article class="edu f"><p class="date">2026 – 2027 · En cours</p><h3>Master 2 Ingénierie Mathématique &amp; Data Science</h3><p class="school">Université de Haute-Alsace</p><p>ML et Deep Learning, optimisation sur GPU, graphes et automates, théorie du signal, imagerie et vision par ordinateur, analyse de Fourier, séries temporelles.</p></article>
+<article class="edu"><p class="date">2025 – 2026</p><h3>Master 1 Ingénierie Mathématique &amp; Data Science</h3><p class="school">Université de Haute-Alsace</p><p>Optimisation et programmation dynamique, statistiques inférentielles, EDP, analyse matricielle, Python, R, SQL, NoSQL, DataViz.</p></article>
+<article class="edu"><p class="date">2024 – 2025</p><h3>Licence Mathématiques appliquées</h3><p class="school">Université de Haute-Alsace</p><p>Analyse appliquée, C++, automates.</p></article>
+<article class="edu"><p class="date">2019 – 2023</p><h3>Licence fondamentale de mathématiques</h3><p class="school">Université de Lomé · Togo</p><p>Algèbre, analyse, probabilités et statistiques, optimisation, analyse numérique, géométrie ; physique quantique, relativité restreinte, thermodynamique, optique ; programmation C, Scilab.</p></article>
 </div>
-</section>
+<div class="eg extra"><article class="edu"><h3>Certifications</h3><div class="pills"><span class="pill">Machine Learning Specialization — DeepLearning.AI / Stanford Online</span><span class="pill">Google Data Analytics Certificate</span><span class="pill">AI in Fraud Detection</span></div></article>
+<article class="edu"><h3>Langues</h3><div class="pills"><span class="pill">Français — courant</span><span class="pill">Anglais — B2</span></div></article></div>
+</div></section>
 
-<!-- ABOUT -->
-<section id="about">
-<div class="wrap">
-  <div class="section-head">
-    <div>
-      <div class="section-kicker">01 / PROFIL</div>
-      <h2>Une formation mathématique appliquée à la donnée.</h2>
-    </div>
-    <div class="section-note">Modéliser, expérimenter, mesurer, puis transformer le résultat en outil exploitable.</div>
-  </div>
-
-  <div class="about-grid">
-    <div class="about-copy reveal">
-      <p>
-        Mon parcours part des <strong>mathématiques</strong> : analyse, équations différentielles,
-        processus stochastiques et modélisation. En Master 2 Ingénierie Mathématique &amp; Data Science,
-        j'applique cette base à des problèmes de <strong>Machine Learning, Scientific ML, Data Quality,
-        séries temporelles et IA générative</strong>.
-      </p>
-      <p>
-        Mes projets vont de la résolution numérique de systèmes dynamiques avec des
-        <strong>Physics-Informed Neural Networks</strong> à la construction de systèmes RAG locaux,
-        en passant par la détection de fraude, la maintenance prédictive, l'analyse énergétique
-        et la collecte de données temps réel.
-      </p>
-      <p>
-        Je recherche un <strong>stage R&amp;D de six mois à partir de mars 2027</strong>,
-        notamment sur des problématiques où la modélisation, l'analyse des données et le développement
-        expérimental se rencontrent.
-      </p>
-    </div>
-
-    <div class="focus-grid reveal">
-      <div class="focus">
-        <h3>01 / MODELING</h3>
-        <p>Modélisation mathématique, systèmes dynamiques, équations différentielles, séries temporelles.</p>
-      </div>
-      <div class="focus">
-        <h3>02 / SCIENTIFIC ML</h3>
-        <p>PINNs, PyTorch, optimisation et apprentissage guidé par des connaissances physiques.</p>
-      </div>
-      <div class="focus">
-        <h3>03 / DATA</h3>
-        <p>Qualité, nettoyage, analyse exploratoire, bases de données et visualisation.</p>
-      </div>
-      <div class="focus">
-        <h3>04 / GENAI</h3>
-        <p>RAG hybride, LLM locaux, embeddings, reranking et pipelines LLM multi-étapes.</p>
-      </div>
-    </div>
-  </div>
-</div>
-</section>
-
-<!-- PROJECTS -->
-<section id="projects" class="projects">
-<div class="wrap">
-  <div class="section-head">
-    <div>
-      <div class="section-kicker">02 / PROJETS SÉLECTIONNÉS</div>
-      <h2>Des modèles aux systèmes utilisables.</h2>
-    </div>
-    <div class="section-note">Une sélection de travaux académiques et personnels orientés modélisation, ML, IA générative et données.</div>
-  </div>
-
-  <!-- 01 VentiRE -->
-  <article class="project reveal">
-    <div class="project-index">01</div>
-    <div>
-      <span class="project-tag violet">Énergie · RAG · Réglementation</span>
-      <h3>VentiRE — Copilote RAG réglementaire</h3>
-      <p class="project-desc">
-        Assistant local permettant d'interroger un corpus réglementaire français sur la ventilation.
-        Pipeline de parsing, chunking, recherche dense + BM25, reranking et génération avec LLM local.
-        Le système intègre également une logique de refus lorsque la question sort du périmètre documentaire.
-      </p>
-      <div class="stack">Python · LlamaIndex · Ollama · Gemma 3 · FastEmbed · BM25 · Cohere Rerank · Streamlit</div>
-      <div class="links">
-        <a href="https://github.com/Dave-kossi/VentiRE-RAG" target="_blank" rel="noopener">GitHub →</a>
-      </div>
-    </div>
-    <div class="metrics">
-      <div class="metric violet"><span class="num">&gt;80%</span><span class="label">Recall RAGAS</span></div>
-      <div class="metric violet"><span class="num">&gt;90%</span><span class="label">Precision RAGAS</span></div>
-      <div class="metric violet"><span class="num">Local</span><span class="label">LLM exécuté localement via Ollama</span></div>
-    </div>
-    <div class="project-bottom violet">
-      <span>Problématique</span>
-      <p>Réduire le temps de recherche dans plusieurs textes réglementaires tout en conservant la traçabilité des sources et la capacité du système à reconnaître ses limites.</p>
-    </div>
-  </article>
-
-  <!-- 02 PINNs -->
-  <article class="project reveal">
-    <div class="project-index">02</div>
-    <div>
-      <span class="project-tag">Recherche · Scientific ML</span>
-      <h3>PINNs pour la résolution du système de Lorenz</h3>
-      <p class="project-desc">
-        Étude de Physics-Informed Neural Networks pour approximer un système dynamique chaotique.
-        Comparaison d'un réseau standard avec des Fourier Features, validation par rapport à une
-        solution RK45 et exploration des observations partielles X/Y/Z.
-      </p>
-      <div class="stack">Python · PyTorch · PINNs · Fourier Features · RK45 · Optimisation L-BFGS</div>
-      <div class="links">
-        <a href="https://github.com/Dave-kossi/PINNs-for-chaotic-system" target="_blank" rel="noopener">GitHub →</a>
-      </div>
-    </div>
-    <div class="metrics">
-      <div class="metric"><span class="num">0.0609</span><span class="label">erreur relative L2 avec Fourier Features</span></div>
-      <div class="metric"><span class="num">0.1052</span><span class="label">erreur relative L2 du modèle standard</span></div>
-      <div class="metric"><span class="num">−42%</span><span class="label">erreur relative après amélioration</span></div>
-    </div>
-    <div class="project-bottom">
-      <span>Question scientifique</span>
-      <p>Dans quelles situations un PINN apporte-t-il une valeur supplémentaire par rapport à une méthode numérique classique lorsque l'information disponible est partielle ou bruitée ?</p>
-    </div>
-  </article>
-
-  <!-- 03 FRAUD -->
-  <article class="project reveal">
-    <div class="project-index">03</div>
-    <div>
-      <span class="project-tag">Finance · Machine Learning</span>
-      <h3>Détection de fraude bancaire</h3>
-      <p class="project-desc">
-        Analyse de 50 000 transactions et comparaison de modèles supervisés sur un problème de
-        classification déséquilibrée. Le travail met l'accent sur le compromis entre rappel,
-        précision et capacité de détection des transactions frauduleuses.
-      </p>
-      <div class="stack">Python · Pandas · Scikit-learn · LightGBM · données déséquilibrées</div>
-      <div class="links">
-        <a href="https://github.com/Dave-kossi/bank-transaction-fraud-detection" target="_blank" rel="noopener">GitHub →</a>
-      </div>
-    </div>
-    <div class="metrics">
-      <div class="metric"><span class="num">50 000</span><span class="label">transactions analysées</span></div>
-      <div class="metric"><span class="num">0.764</span><span class="label">F1-score LightGBM</span></div>
-      <div class="metric"><span class="num">0.804</span><span class="label">AUC</span></div>
-    </div>
-    <div class="project-bottom">
-      <span>Point clé</span>
-      <p>Dans un problème de fraude, l'accuracy seule est insuffisante : l'évaluation doit prendre en compte le déséquilibre des classes et le coût relatif des erreurs.</p>
-    </div>
-  </article>
-
-  <!-- 04 RTE -->
-  <article class="project reveal">
-    <div class="project-index">04</div>
-    <div>
-      <span class="project-tag violet">Énergie · Analyse de données</span>
-      <h3>Analyse du système électrique français — RTE</h3>
-      <p class="project-desc">
-        Dashboard interactif construit à partir de données ouvertes RTE pour explorer production,
-        consommation, échanges transfrontaliers, émissions et écarts entre consommation réelle et prévisions.
-      </p>
-      <div class="stack">Python · Pandas · Plotly · Streamlit · données ouvertes RTE / ODRE</div>
-      <div class="links">
-        <a href="https://github.com/Dave-kossi" target="_blank" rel="noopener">GitHub →</a>
-      </div>
-    </div>
-    <div class="metrics">
-      <div class="metric violet"><span class="num">MAE / RMSE</span><span class="label">évaluation des écarts de prévision</span></div>
-      <div class="metric violet"><span class="num">CO₂</span><span class="label">suivi des émissions et du mix énergétique</span></div>
-    </div>
-    <div class="project-bottom violet">
-      <span>Objectif</span>
-      <p>Transformer des données énergétiques ouvertes en indicateurs lisibles pour explorer les tendances, les corrélations et la volatilité du système électrique.</p>
-    </div>
-  </article>
-
-  <!-- 05 PREDICTIVE -->
-  <article class="project reveal">
-    <div class="project-index">05</div>
-    <div>
-      <span class="project-tag violet">Industrie · Fiabilité</span>
-      <h3>Maintenance prédictive &amp; analyse de survie</h3>
-      <p class="project-desc">
-        Étude de la durée de vie des équipements avec Kaplan–Meier et analyse du risque de défaillance,
-        dans l'objectif d'estimer la durée de vie résiduelle et d'aider à planifier les interventions.
-      </p>
-      <div class="stack">Python · Lifelines · Kaplan–Meier · Plotly · Streamlit</div>
-      <div class="links">
-        <a href="https://predictive-maintenance-in-industry-ci7wzatf9nlcghomctgbtx.streamlit.app/" target="_blank" rel="noopener" class="demo">Démo →</a>
-        <a href="https://github.com/Dave-kossi/Predictive-Maintenance-in-industry" target="_blank" rel="noopener">GitHub →</a>
-      </div>
-    </div>
-    <div class="metrics">
-      <div class="metric violet"><span class="num">RUL</span><span class="label">durée de vie résiduelle comme objectif d'analyse</span></div>
-      <div class="metric violet"><span class="num">Kaplan–Meier</span><span class="label">modélisation du cycle de vie</span></div>
-    </div>
-    <div class="project-bottom violet">
-      <span>Application</span>
-      <p>Passer d'une logique corrective à une logique de surveillance et d'anticipation des défaillances dans des environnements industriels.</p>
-    </div>
-  </article>
-
-  <!-- 06 MATCHCRAFT -->
-  <article class="project reveal">
-    <div class="project-index">06</div>
-    <div>
-      <span class="project-tag">Automatisation · LLM</span>
-      <h3>MatchCraft AI — Pipeline LLM multi-étapes</h3>
-      <p class="project-desc">
-        Pipeline personnel de veille d'offres et de génération de lettres personnalisées.
-        L'architecture sépare extraction des besoins, rédaction et auto-critique avec régénération
-        conditionnelle. L'objectif est d'éviter les affirmations inventées en ancrant la rédaction
-        dans les informations réellement disponibles dans les documents du candidat.
-      </p>
-      <div class="stack">Python · Groq · gpt-oss-120b · qwen3.6-27b · Streamlit · GitHub Actions</div>
-      <div class="links">
-        <a href="https://matchcraft-ai-njdxydjfqfzph6sbfdweru.streamlit.app/" target="_blank" rel="noopener" class="demo">Démo →</a>
-        <a href="https://github.com/Dave-kossi/Job_Agent" target="_blank" rel="noopener">GitHub →</a>
-      </div>
-    </div>
-    <div class="metrics">
-      <div class="metric"><span class="num">3 étapes</span><span class="label">extraction → rédaction → auto-critique</span></div>
-      <div class="metric"><span class="num">Cron</span><span class="label">veille automatisée via GitHub Actions</span></div>
-    </div>
-    <div class="project-bottom">
-      <span>Architecture</span>
-      <p>Le LLM intervient dans des étapes contrôlées par du code déterministe : il ne décide pas seul de la structure du pipeline.</p>
-    </div>
-  </article>
-
-  <!-- 07 AXIOM -->
-  <article class="project reveal">
-    <div class="project-index">07</div>
-    <div>
-      <span class="project-tag">Data Quality · IA</span>
-      <h3>Axiom — Data Quality Audit &amp; Cleaning</h3>
-      <p class="project-desc">
-        Application de profiling et de nettoyage de données combinant détection du contexte métier,
-        analyse des anomalies, préparation des données et assistant IA contextuel.
-      </p>
-      <div class="stack">Python · Pandas · NumPy · Streamlit · ydata-profiling · Llama 3.2</div>
-      <div class="links">
-        <a href="https://data-quality-audit-and-cleaning-pipeline-btijscehnpfxa8grjj2ui.streamlit.app/" target="_blank" rel="noopener" class="demo">Démo →</a>
-        <a href="https://github.com/Dave-kossi/Data-Quality-Audit-and-Cleaning-Pipeline-App" target="_blank" rel="noopener">GitHub →</a>
-      </div>
-    </div>
-    <div class="metrics">
-      <div class="metric"><span class="num">7 étapes</span><span class="label">pipeline de nettoyage et profiling</span></div>
-      <div class="metric"><span class="num">500 Mo</span><span class="label">volume de fichier ciblé</span></div>
-    </div>
-    <div class="project-bottom">
-      <span>Principe</span>
-      <p>La qualité des données est traitée comme une étape de la chaîne analytique, avant la modélisation et non comme une correction de dernière minute.</p>
-    </div>
-  </article>
-
-  <!-- 08 VELO -->
-  <article class="project reveal">
-    <div class="project-index">08</div>
-    <div>
-      <span class="project-tag">Temps réel · Time Series</span>
-      <h3>VeloTrack Mulhouse — Collecte GBFS</h3>
-      <p class="project-desc">
-        Collecte et archivage horodaté de l'état des stations Vélostation de l'agglomération mulhousienne.
-        Le projet transforme une API de mobilité temps réel en historique exploitable pour l'analyse temporelle
-        et la future prédiction de disponibilité.
-      </p>
-      <div class="stack">Python · API GBFS · Pandas · Streamlit · Time Series</div>
-      <div class="links">
-        <a href="https://biketrack-jq9uepdtfbywzdccc5tvim.streamlit.app/" target="_blank" rel="noopener" class="demo">Démo →</a>
-        <a href="https://github.com/Dave-kossi/Bike_Track" target="_blank" rel="noopener">GitHub →</a>
-      </div>
-    </div>
-    <div class="metrics">
-      <div class="metric"><span class="num">60</span><span class="label">stations suivies</span></div>
-      <div class="metric"><span class="num">Temps réel</span><span class="label">capture et archivage horodaté</span></div>
-    </div>
-    <div class="project-bottom">
-      <span>Suite possible</span>
-      <p>Construire à partir de l'historique des modèles de prévision de disponibilité et d'aide à la réallocation des vélos.</p>
-    </div>
-  </article>
-
-  <!-- 09 PSO/DE -->
-  <article class="project reveal">
-    <div class="project-index">09</div>
-    <div>
-      <span class="project-tag">Recherche · GPU · Optimisation</span>
-      <h3>Massively Parallel PSO &amp; Differential Evolution</h3>
-      <p class="project-desc">
-        Implémentation parallèle sur GPU de méthodes d'optimisation par essaim et évolution différentielle.
-        Travail autour de kernels CUDA, de fonctions benchmark classiques et de l'organisation d'une
-        expérimentation reproductible.
-      </p>
-      <div class="stack">C++ · CUDA · GPU · PSO · Differential Evolution · Benchmark functions</div>
-      <div class="links">
-        <a href="https://github.com/Dave-kossi" target="_blank" rel="noopener">GitHub →</a>
-      </div>
-    </div>
-    <div class="metrics">
-      <div class="metric"><span class="num">CUDA</span><span class="label">parallélisation GPU</span></div>
-      <div class="metric"><span class="num">PSO + DE</span><span class="label">deux familles d'optimisation</span></div>
-    </div>
-    <div class="project-bottom">
-      <span>Intérêt R&amp;D</span>
-      <p>Relier les méthodes numériques, l'optimisation et le calcul parallèle pour accélérer l'exploration de fonctions complexes.</p>
-    </div>
-  </article>
-
-  <!-- 10 AGRI -->
-  <article class="project reveal">
-    <div class="project-index">10</div>
-    <div>
-      <span class="project-tag violet">Computer Vision · Agriculture</span>
-      <h3>Analyse de potentiel agricole par imagerie satellite</h3>
-      <p class="project-desc">
-        Projet académique autour de données Sentinel-2 et d'un dataset AgriPotential. L'approche part
-        d'une analyse mathématique et de la compréhension des données avant d'explorer débruitage,
-        super-résolution, segmentation et identification des zones agricoles menacées.
-      </p>
-      <div class="stack">Python · HDF5 · Sentinel-2 · Computer Vision · Segmentation · Analyse d'images</div>
-      <div class="links">
-        <a href="https://github.com/Dave-kossi" target="_blank" rel="noopener">Projet / GitHub →</a>
-      </div>
-    </div>
-    <div class="metrics">
-      <div class="metric violet"><span class="num">8 890</span><span class="label">patches du dataset AgriPotential</span></div>
-      <div class="metric violet"><span class="num">10</span><span class="label">bandes Sentinel-2 exploitées</span></div>
-    </div>
-    <div class="project-bottom violet">
-      <span>Approche</span>
-      <p>Commencer par la structure mathématique et statistique des données avant d'introduire des méthodes modernes de vision par ordinateur.</p>
-    </div>
-  </article>
-
-</div>
-</section>
-
-<!-- EXPERIENCE -->
-<section id="experience">
-<div class="wrap">
-  <div class="section-head">
-    <div>
-      <div class="section-kicker">03 / EXPÉRIENCE</div>
-      <h2>Données et outils dans des contextes réels.</h2>
-    </div>
-    <div class="section-note">Une expérience opérationnelle qui complète les projets académiques et personnels.</div>
-  </div>
-
-  <div class="timeline-item reveal">
-    <div class="date">02/2026 — 09/2026</div>
-    <div>
-      <div class="role">Analyste des flux logistiques &amp; Digitalisation — Bénévolat</div>
-      <div class="org">Secours populaire français du Haut-Rhin · Mulhouse</div>
-      <ul class="points">
-        <li>Analyse des flux de distribution des kits alimentaires et hygiéniques pour les familles et les étudiants.</li>
-        <li>Nettoyage et fiabilisation des données : traitement des valeurs aberrantes, valeurs manquantes et contrôles de cohérence.</li>
-        <li>Réduction d'environ <strong>90 % des erreurs de saisie observées</strong> avant l'enregistrement de nouvelles commandes.</li>
-        <li>Gestion et optimisation des commandes inter-antennes avant et après les commandes auprès de la Fédération du Haut-Rhin.</li>
-        <li>Participation à la conception d'outils de distribution avec scan des produits et alimentation d'une base de données, en vue d'une exploitation BI et séries temporelles.</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="timeline-item reveal">
-    <div class="date">2022 — 2024</div>
-    <div>
-      <div class="role">Technicien informatique &amp; Coordinateur d'équipe stagiaires</div>
-      <div class="org">Computer Forever · Lomé, Togo</div>
-      <ul class="points">
-        <li>Maintenance, diagnostic et résolution de problèmes matériels et logiciels pour PME, PMI et particuliers.</li>
-        <li>Encadrement et formation de plus de 8 stagiaires techniciens informatiques.</li>
-        <li>Répartition des missions, supervision des interventions et transfert de compétences sur les procédures de diagnostic.</li>
-        <li>Support utilisateurs et coordination des interventions avec une approche analytique et structurée.</li>
-      </ul>
-    </div>
-  </div>
-</div>
-</section>
-
-<!-- SKILLS -->
-<section id="skills" class="skills">
-<div class="wrap">
-  <div class="section-head">
-    <div>
-      <div class="section-kicker">04 / COMPÉTENCES</div>
-      <h2>Une stack orientée recherche et application.</h2>
-    </div>
-  </div>
-
-  <div class="skills-grid">
-    <div class="skill-card reveal">
-      <h3>Mathematical Modeling</h3>
-      <p>Équations différentielles · systèmes dynamiques · processus stochastiques · modélisation numérique · séries temporelles · optimisation</p>
-    </div>
-    <div class="skill-card reveal">
-      <h3>Scientific ML</h3>
-      <p>PINNs · PyTorch · TensorFlow · Fourier Features · apprentissage guidé par la physique · expérimentation numérique</p>
-    </div>
-    <div class="skill-card reveal">
-      <h3>Machine Learning</h3>
-      <p>Scikit-learn · LightGBM · XGBoost · classification · données déséquilibrées · feature engineering · évaluation de modèles</p>
-    </div>
-    <div class="skill-card reveal">
-      <h3>GenAI / LLM</h3>
-      <p>RAG · LlamaIndex · Ollama · Hugging Face · embeddings · BM25 · reranking · pipelines LLM multi-étapes</p>
-    </div>
-    <div class="skill-card reveal">
-      <h3>Data &amp; Databases</h3>
-      <p>Python · Pandas · NumPy · SQL · PostgreSQL · MongoDB · BigQuery · SQLite · Data Quality</p>
-    </div>
-    <div class="skill-card reveal">
-      <h3>BI &amp; Deployment</h3>
-      <p>Power BI · Plotly · Streamlit · Git · GitHub Actions · Hugging Face · dashboards interactifs</p>
-    </div>
-  </div>
-</div>
-</section>
-
-<!-- EDUCATION -->
-<section id="education">
-<div class="wrap">
-  <div class="section-head">
-    <div>
-      <div class="section-kicker">05 / FORMATION</div>
-      <h2>Parcours académique.</h2>
-    </div>
-  </div>
-
-  <div class="edu-grid">
-    <div class="reveal">
-      <div class="edu-item">
-        <div class="edu-degree">Master 2 Ingénierie Mathématique &amp; Data Science</div>
-        <div class="edu-school">Université de Haute-Alsace · 2026–2027</div>
-      </div>
-      <div class="edu-item">
-        <div class="edu-degree">Master 1 Ingénierie Mathématique &amp; Data Science</div>
-        <div class="edu-school">Université de Haute-Alsace · 2025–2026</div>
-      </div>
-      <div class="edu-item">
-        <div class="edu-degree">Licence Mathématiques Appliquées</div>
-        <div class="edu-school">Université de Haute-Alsace · 2024–2025</div>
-      </div>
-      <div class="edu-item">
-        <div class="edu-degree">Licence Fondamentale de Mathématiques</div>
-        <div class="edu-school">Université de Lomé · 2019–2023</div>
-      </div>
-    </div>
-
-    <div class="reveal">
-      <div class="skill-card" style="margin-bottom:15px">
-        <h3>Certifications</h3>
-        <div class="tags">
-          <span class="tag">Machine Learning Specialization — DeepLearning.AI / Stanford Online</span>
-          <span class="tag">Google Data Analytics Certificate</span>
-          <span class="tag">AI in Fraud Detection</span>
-        </div>
-      </div>
-      <div class="skill-card">
-        <h3>Langues</h3>
-        <div class="tags">
-          <span class="tag">Français — courant</span>
-          <span class="tag">Anglais — B2</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact" class="contact">
-<div class="wrap">
-  <div class="section-head">
-    <div>
-      <div class="section-kicker">06 / CONTACT</div>
-      <h2>Construisons quelque chose de mesurable.</h2>
-    </div>
-  </div>
-
-  <div class="contact-grid">
-    <div class="contact-lead reveal">
-      Je recherche un <em>stage R&amp;D de six mois à partir de mars 2027</em>,
-      notamment sur des problématiques de Data Science, Mathematical Modeling,
-      Scientific ML ou IA appliquée.
-    </div>
-
-    <ul class="contact-list reveal">
-      <li><a href="mailto:noumagnokossi0@gmail.com">noumagnokossi0@gmail.com</a></li>
-      <li><a href="tel:+33745974382">+33 7 45 97 43 82</a></li>
-      <li><a href="https://www.linkedin.com/in/kossi-noumagno" target="_blank" rel="noopener">LinkedIn ↗</a></li>
-      <li><a href="https://github.com/Dave-kossi" target="_blank" rel="noopener">GitHub ↗</a></li>
-    </ul>
-  </div>
-</div>
-</section>
-
+<section class="contact" id="contact"><div class="wrap"><div class="cc"><div>
+<p class="eyebrow">06 / Contact</p><h2>Construisons quelque chose de mesurable.</h2>
+<p>Je recherche un stage de six mois à partir de mars 2027 en Data Science, Machine Learning ou R&amp;D appliquée, dans l'énergie, l'industrie ou la finance.</p>
+<a class="button primary" href="mailto:noumagnokossi0@gmail.com">Me contacter par e-mail ↗</a></div>
+<div class="cl"><a class="clk" href="mailto:noumagnokossi0@gmail.com"><span>E-mail</span><strong>noumagnokossi0@gmail.com ↗</strong></a><a class="clk" href="tel:+33745974382"><span>Téléphone</span><strong>+33 7 45 97 43 82 ↗</strong></a><a class="clk" href="https://www.linkedin.com/in/kossi-noumagno" target="_blank" rel="noopener noreferrer"><span>LinkedIn</span><strong>kossi-noumagno ↗</strong></a><a class="clk" href="https://github.com/Dave-kossi" target="_blank" rel="noopener noreferrer"><span>GitHub</span><strong>Dave-kossi ↗</strong></a></div></div></div></section>
 </main>
-
-<footer>
-<div class="wrap">
-  <span>Kossi Noumagno · France</span>
-  <span>Portfolio · 2026</span>
-</div>
-</footer>
-
+<footer><div class="wrap fr"><span>© <span id="y"></span> Kossi Noumagno · Portfolio Data Science &amp; ML</span><a href="#accueil">Retour en haut ↑</a></div></footer>
 <script>
-const observer = new IntersectionObserver((entries)=>{
-  entries.forEach(entry=>{
-    if(entry.isIntersecting){
-      entry.target.classList.add('visible');
-      observer.unobserve(entry.target);
-    }
-  });
-},{threshold:.08,rootMargin:'0px 0px -30px 0px'});
-
-document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
-</script>
-
-</body>
-</html>
+document.getElementById("y").textContent=new Date().getFullYear();
+var fb=document.querySelectorAll(".filter"),ps=document.querySelectorAll(".project");
+fb.forEach(function(b){b.addEventListener("click",function(){fb.forEach(function(i){i.classList.remove("active")});b.classList.add("active");var f=b.dataset.filter;ps.forEach(function(p){p.hidden=f!=="all"&&p.dataset.category.split(" ").indexOf(f)<0})})});
+</script></body></html>
